@@ -26,9 +26,46 @@ class MemoListTableViewController: UITableViewController {
         return f
     }()
     
+    // view가 나타날때마다 실행됨
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+//        // tableView에 data를 reload
+//        tableView.reloadData()
+//
+//        // 제대로 실행되고 있는지 log print
+//        //print(#function)
+    }
+    
+    var token: NSObjectProtocol?
+    // deinit 이란? (소멸자)  + 구조체가 아닌 class 타입에서만 작성가능하다.
+    // -> 특정 인스턴스가 더이상 필요없을때 메모리 공간 확보를 위해 해당 인스턴스를 자동적으로 메모리 해제함.
+    // 클래스의 소멸자는 하나의 클래스 인스턴스 당 최대 하나씩 존재함.
+    // 별도의 매개변수나 괄호를 명시하지 않음.
+    deinit {
+        if let token = token {
+            NotificationCenter.default.removeObserver(token)
+        }
+    }
+    
+    // View Life Cycle 중 단 한번만 실행됨
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // 옵저버 추가
+        // UI 업데이트? -> main 스레드에서 처리해야함
+        // -> DispatchQueue나 OperationQueue에서 담당함
+        
+        // addObserver는 토큰으로 사용됨
+        token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main) { [weak self] (noti) in
+            self?.tableView.reloadData()
+        }
+       
+        // 노티피케이션에서 가장 중요한것은 옵저버를 해제하는것
+        // -> 앱은 정상실행 되지만 내부에서는 메모리가 낭비되고 있음
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

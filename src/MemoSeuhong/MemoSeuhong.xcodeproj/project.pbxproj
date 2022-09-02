@@ -16,6 +16,7 @@
 		6038F62128C1EB030046BDD6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038F62028C1EB030046BDD6 /* Model.swift */; };
 		6038F62328C1EC930046BDD6 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038F62228C1EC930046BDD6 /* MemoListTableViewController.swift */; };
 		6085EA0328C1F66C000B43FD /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085EA0228C1F66C000B43FD /* ComposeViewController.swift */; };
+		6085EA0528C1FC79000B43FD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085EA0428C1FC79000B43FD /* UIViewController+Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6038F62028C1EB030046BDD6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6038F62228C1EC930046BDD6 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		6085EA0228C1F66C000B43FD /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		6085EA0428C1FC79000B43FD /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				6038F62028C1EB030046BDD6 /* Model.swift */,
+				6085EA0428C1FC79000B43FD /* UIViewController+Alert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				6085EA0328C1F66C000B43FD /* ComposeViewController.swift in Sources */,
 				6038F61328C1C7D70046BDD6 /* MemoSeuhong.xcdatamodeld in Sources */,
 				6038F62128C1EB030046BDD6 /* Model.swift in Sources */,
+				6085EA0528C1FC79000B43FD /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
