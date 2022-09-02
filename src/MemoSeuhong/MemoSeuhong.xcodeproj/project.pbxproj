@@ -13,6 +13,8 @@
 		6038F61328C1C7D70046BDD6 /* MemoSeuhong.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6038F61128C1C7D70046BDD6 /* MemoSeuhong.xcdatamodeld */; };
 		6038F61528C1C7D80046BDD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6038F61428C1C7D80046BDD6 /* Assets.xcassets */; };
 		6038F61828C1C7D80046BDD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6038F61628C1C7D80046BDD6 /* LaunchScreen.storyboard */; };
+		6038F62128C1EB030046BDD6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038F62028C1EB030046BDD6 /* Model.swift */; };
+		6038F62328C1EC930046BDD6 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038F62228C1EC930046BDD6 /* MemoListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6038F61428C1C7D80046BDD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6038F61728C1C7D80046BDD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6038F61928C1C7D80046BDD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6038F62028C1EB030046BDD6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6038F62228C1EC930046BDD6 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		6038F60728C1C7D70046BDD6 /* MemoSeuhong */ = {
 			isa = PBXGroup;
 			children = (
+				6038F61F28C1EAE30046BDD6 /* Model */,
 				6038F60828C1C7D70046BDD6 /* AppDelegate.swift */,
 				6038F60A28C1C7D70046BDD6 /* SceneDelegate.swift */,
+				6038F62228C1EC930046BDD6 /* MemoListTableViewController.swift */,
 				6038F60E28C1C7D70046BDD6 /* Main.storyboard */,
 				6038F61428C1C7D80046BDD6 /* Assets.xcassets */,
 				6038F61628C1C7D80046BDD6 /* LaunchScreen.storyboard */,
@@ -65,6 +71,14 @@
 				6038F61128C1C7D70046BDD6 /* MemoSeuhong.xcdatamodeld */,
 			);
 			path = MemoSeuhong;
+			sourceTree = "<group>";
+		};
+		6038F61F28C1EAE30046BDD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6038F62028C1EB030046BDD6 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +154,9 @@
 			files = (
 				6038F60928C1C7D70046BDD6 /* AppDelegate.swift in Sources */,
 				6038F60B28C1C7D70046BDD6 /* SceneDelegate.swift in Sources */,
+				6038F62328C1EC930046BDD6 /* MemoListTableViewController.swift in Sources */,
 				6038F61328C1C7D70046BDD6 /* MemoSeuhong.xcdatamodeld in Sources */,
+				6038F62128C1EB030046BDD6 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
