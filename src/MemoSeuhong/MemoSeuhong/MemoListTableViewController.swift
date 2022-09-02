@@ -17,6 +17,15 @@ import UIKit
 
 class MemoListTableViewController: UITableViewController {
 
+    let formatter: DateFormatter = {
+       let f = DateFormatter()
+        f.dateStyle = .long
+        f.timeStyle = .short
+        // 22년9월2일 => locale 설정 안해도 한국어로 뜨네요
+        f.locale = Locale(identifier: "Ko_kr")
+        return f
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,8 +57,8 @@ class MemoListTableViewController: UITableViewController {
         // SubTitle : 2개의 Label 존재함
         // => textLabel, detailTextLabel을 configure함
         cell.textLabel?.text = target.content
-        cell.detailTextLabel?.text = target.insertDate.description
-
+        cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
+        
         return cell
     }
     
