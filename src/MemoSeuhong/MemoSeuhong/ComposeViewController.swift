@@ -58,6 +58,20 @@ class ComposeViewController: UIViewController {
         
     }
     
+    var willShowToken: NSObjectProtocol?
+    var willHideToken: NSObjectProtocol?
+    
+    // 옵저버 해제
+    deinit {
+        if let token = willShowToken {
+            NotificationCenter.default.removeObserver(token)
+        }
+        
+        if let token = willHideToken {
+            NotificationCenter.default.removeObserver(token)
+        }
+    }
+    
     // VC가 생성된 후 호출됨 -> 한번만 실행되는 초기화코드는 여기서 구현함
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,18 +87,59 @@ class ComposeViewController: UIViewController {
         
         // VC를 textView의 delegate 설정
         memoTextView.delegate = self
+        
+        // 키보드 표시되기 전 notification
+        willShowToken = NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: OperationQueue.main, using: { [weak self](noti) in
+            // 키보드 높이만큼 여백 추가
+            guard let strongSelf = self else { return }
+            // notification으로 전달된 값을 활용하여 높이를 구해야함
+            if let frame = noti.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+                let height = frame.cgRectValue.height // 키보드 높이를 저장
+                var inset = strongSelf.memoTextView.contentInset // contentInset-> 여백저장
+                inset.bottom = height // bottom 속성을 키보드 높이로 변경
+                strongSelf.memoTextView.contentInset = inset // bottom을 제외한 나머지 여백 유지
+                
+                // textView오른쪽에 표시되는 스크롤바에도 같은 크기의 여백을 추가해야함
+                inset = strongSelf.memoTextView.scrollIndicatorInsets
+                inset.bottom = height
+                strongSelf.memoTextView.scrollIndicatorInsets = inset
+            }
+        })
+        
+        willHideToken = NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: OperationQueue.main, using: { [weak self] (noti) in
+            guard let strongSelf = self else { return }
+            // 여백을 제거 -> 키보드 높이를 계산할 필요 없음
+            var inset = strongSelf.memoTextView.contentInset // 현재 inset을 변수에 저장한 후
+            inset.bottom = 0 // 변수(bottom)를 0으로 바꿔줌
+            strongSelf.memoTextView.contentInset = inset // 그리고 실제 값을 변경
+            
+            inset = strongSelf.memoTextView.scrollIndicatorInsets
+            inset.bottom = 0
+            strongSelf.memoTextView.scrollIndicatorInsets = inset
+            
+        })
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // First Responder => 입력포커스를 가진 뷰
+        // textView를 firstResponder로 만들면 textView가 선택된 후
+        // 키보드가 자동으로 표시된다.
+        memoTextView.becomeFirstResponder()
+        // 화면닫을때 해제해주면 좋음 -> viewWillDisappear에서
+        
         // 편집화면이 표시되기 직전에 delegate로 설정되었다가
         navigationController?.presentationController?.delegate = self
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        // (firstResponder 해제)
+        // view가 사라질때 입력포커스 제거되고 키보드사라짐
+        memoTextView.resignFirstResponder()
         // 편집화면이 사라지기 직전에 delegate로 해제됨
         navigationController?.presentationController?.delegate = nil
     }
