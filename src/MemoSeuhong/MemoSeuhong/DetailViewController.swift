@@ -17,6 +17,16 @@ class DetailViewController: UIViewController {
     // 이전화면에서 전달한 메모가 저장됨 -> 저장된 메모를 보기화면에 표시해야함
     var memo: Memo?
     
+    // memo 공유를 위해 IBAction 선언
+    @IBAction func share(_ sender: Any) {
+        // iOS가 기본적으로 제공하는 공유기능은 UIActivityViewController로 쉽게 가능함
+        guard let memo = memo?.content else { return }
+        let vc = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+        present(vc, animated: true, completion: nil)
+        
+        //위의 코드 3줄만 써주면 나머지는 iOS에서 알아서 해결해줌
+    }
+    
     // 메모보기에서 메모삭제
     @IBAction func deleteMemo(_ sender: Any) {
         // 메모삭제 경고창
