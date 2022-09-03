@@ -60,6 +60,13 @@ class DataManager {
         saveContext()
     }
     
+    // 삭제메소드, 실제로 메모가 전달된경우에만 삭제하므로 Memo?(옵셔널)로 선언
+    func deleteMemo(_ memo: Memo?) {
+        if let memo = memo {
+            mainContext.delete(memo) // context가 제공하는 기본 delete 메소드
+            saveContext()
+        }
+    }
     
     // MARK: - Core Data stack
 

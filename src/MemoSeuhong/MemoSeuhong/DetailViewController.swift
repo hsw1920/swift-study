@@ -17,6 +17,25 @@ class DetailViewController: UIViewController {
     // 이전화면에서 전달한 메모가 저장됨 -> 저장된 메모를 보기화면에 표시해야함
     var memo: Memo?
     
+    // 메모보기에서 메모삭제
+    @IBAction func deleteMemo(_ sender: Any) {
+        // 메모삭제 경고창
+        let alert = UIAlertController(title: "삭제 확인", message: "메모를 삭제할까요?", preferredStyle: .alert)
+        // 삭제버튼 추가 ,, destructive: text가 빨간색으로 표시됨
+        let okAction = UIAlertAction(title: "삭제", style: .destructive) {
+            [weak self](action) in
+            DataManager.shared.deleteMemo(self?.memo)
+            // 메모를 삭제하고 이전화면으로 돌아가야함 -> 화면을 pop해야함
+            self?.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(okAction)
+        
+        // 취소버튼 추가 ,, handler는 nil
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
     let formatter: DateFormatter = {
        let f = DateFormatter()
         f.dateStyle = .long
