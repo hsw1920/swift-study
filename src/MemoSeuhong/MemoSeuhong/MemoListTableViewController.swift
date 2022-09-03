@@ -30,6 +30,11 @@ class MemoListTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // fetchMemo가 호출되면 배열이 data로 채워짐
+        DataManager.shared.fetchMemo()
+        // reloadData가 호출되면 배열에 저장된 data를 기반으로 tableView가 업데이트 됨
+        tableView.reloadData()
+        
 //        // tableView에 data를 reload
 //        tableView.reloadData()
 //
@@ -58,7 +63,10 @@ class MemoListTableViewController: UITableViewController {
             // destination : 새롭게 표시되는 화면
             // memo를 전달하기 위해 실제 형식인 DetailViewController로 타입캐스팅 해야함
             if let vc = segue.destination as? DetailViewController {
-                vc.memo = Memo.dummyMemoList[indexPath.row]
+                // core data 수정 전
+                //vc.memo = Memo.dummyMemoList[indexPath.row]
+                // 수정 후
+                vc.memo = DataManager.shared.memoList[indexPath.row]
             }
             
             // 이후 목록화면에서 전달한 메모를 보기화면에 표시해야함
@@ -96,7 +104,11 @@ class MemoListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return Memo.dummyMemoList.count
+        
+        //return Memo.dummyMemoList.count
+        
+        //Core Data사용으로 변경
+        return DataManager.shared.memoList.count
     }
 
     
@@ -107,13 +119,20 @@ class MemoListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
-        let target = Memo.dummyMemoList[indexPath.row]
+        //let target = Memo.dummyMemoList[indexPath.row]
+        
+        //Core Data사용으로 변경
+        let target = DataManager.shared.memoList[indexPath.row]
+        
         // SubTitle 스타일을 사용하였음.
         // SubTitle : 2개의 Label 존재함
         // => textLabel, detailTextLabel을 configure함
         cell.textLabel?.text = target.content
-        cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
         
+        // 수정전 string(from: ) 메소드는 옵셔널값(insertDate)을 받을 수 없음
+        //cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
+        // core data로 수정 후 -> string(for: )로 변경해야 함
+        cell.detailTextLabel?.text = formatter.string(for: target.insertDate)
         return cell
     }
     

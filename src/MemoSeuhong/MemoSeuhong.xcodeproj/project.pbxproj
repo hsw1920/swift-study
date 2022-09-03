@@ -18,6 +18,7 @@
 		6085EA0328C1F66C000B43FD /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085EA0228C1F66C000B43FD /* ComposeViewController.swift */; };
 		6085EA0528C1FC79000B43FD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085EA0428C1FC79000B43FD /* UIViewController+Alert.swift */; };
 		6085EA0728C20FB2000B43FD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085EA0628C20FB2000B43FD /* DetailViewController.swift */; };
+		60DBFCFF28C3178200B653A1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DBFCFE28C3178200B653A1 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6085EA0228C1F66C000B43FD /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		6085EA0428C1FC79000B43FD /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		6085EA0628C20FB2000B43FD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		60DBFCFE28C3178200B653A1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		6038F60728C1C7D70046BDD6 /* MemoSeuhong */ = {
 			isa = PBXGroup;
 			children = (
+				60DBFCFD28C3176A00B653A1 /* Data */,
 				6038F61F28C1EAE30046BDD6 /* Model */,
 				6038F60828C1C7D70046BDD6 /* AppDelegate.swift */,
 				6038F60A28C1C7D70046BDD6 /* SceneDelegate.swift */,
@@ -88,6 +91,14 @@
 				6085EA0428C1FC79000B43FD /* UIViewController+Alert.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		60DBFCFD28C3176A00B653A1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				60DBFCFE28C3178200B653A1 /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				6038F61328C1C7D70046BDD6 /* MemoSeuhong.xcdatamodeld in Sources */,
 				6038F62128C1EB030046BDD6 /* Model.swift in Sources */,
 				6085EA0528C1FC79000B43FD /* UIViewController+Alert.swift in Sources */,
+				60DBFCFF28C3178200B653A1 /* DataManager.swift in Sources */,
 				6085EA0728C20FB2000B43FD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

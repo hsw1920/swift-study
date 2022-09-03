@@ -21,12 +21,13 @@ class ComposeViewController: UIViewController {
             alert(message: "메모를 입력하세요")
             return
         }
+        /* <<< Core Data 사용하지 않을 때의 경우임 >>>
+         
         // memo에 제대로 저장됐을 경우 guard문 다음의 코드가 실행됨
-        let newMemo = Memo(content: memo)
-        
+        //let newMemo = Memo(content: memo)        
         // 이때 메모가 배열에 정상적으로 저장되지만 tableView가 자동으로 인식하지 못하므로 업데이트 해주어야함
-        Memo.dummyMemoList.append(newMemo)
-        
+        //Memo.dummyMemoList.append(newMemo)
+        */
         NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)
         
         // modal 화면(새 메모)을 닫아줌
