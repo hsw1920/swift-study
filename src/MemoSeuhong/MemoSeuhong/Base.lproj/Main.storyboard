@@ -116,7 +116,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4e-gn-TI9">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Item" id="CIz-c0-U7s"/>
+                                    <barButtonItem systemItem="compose" id="CIz-c0-U7s">
+                                        <connections>
+                                            <segue destination="0UZ-sr-CUA" kind="presentation" id="0eI-FB-jKE"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -133,6 +137,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Def-eO-lJy"/>
+                    <connections>
+                        <outlet property="memoTableView" destination="nQC-3z-nMn" id="i8g-Px-yb3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCu-uY-VOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,11 +150,11 @@
             <objects>
                 <viewController storyboardIdentifier="ComposeViewController" id="CLG-ot-O91" customClass="ComposeViewController" customModule="MemoSeuhong" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s8c-3Y-25I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ryb-V0-Mwy">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -181,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="our-HF-u99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2137.68115942029" y="-666.29464285714278"/>
+            <point key="canvasLocation" x="2713" y="-666"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zwz-6e-kuF">
@@ -205,7 +212,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0UZ-sr-CUA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pAx-Oh-IH2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -215,9 +222,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CU-Vw-yna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1227.536231884058" y="-666.29464285714278"/>
+            <point key="canvasLocation" x="1645" y="-666"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0eI-FB-jKE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

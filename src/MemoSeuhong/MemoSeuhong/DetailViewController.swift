@@ -11,6 +11,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    // 편집 후 reload하기 위해 아울렛 선언
+    @IBOutlet weak var memoTableView: UITableView!
+    
     // 이전화면에서 전달한 메모가 저장됨 -> 저장된 메모를 보기화면에 표시해야함
     var memo: Memo?
     
@@ -23,9 +26,29 @@ class DetailViewController: UIViewController {
         return f
     }()
     
+    // 툴바의 버튼을 탭하면 실행됨 -> 세그웨이로 버튼이 전달됨
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 타입캐스팅하여 nav컨트롤러가 관리하는 첫번째vc(compose VC)로 메모가 전달됨
+        if let vc = segue.destination.children.first as? ComposeViewController {
+            vc.editTarget = memo
+        }
+    }
+    
+    //Notification token을 저장
+    var token: NSObjectProtocol?
+    // 먼저 옵저버 해제 구현
+    deinit {
+        if let token = token {
+            NotificationCenter.default.removeObserver(token)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // 편집된 메모를 보기화면에서 바로 reload 업데이트 해줌
+        token = NotificationCenter.default.addObserver(forName: ComposeViewController.memoDidChange, object: nil, queue: OperationQueue.main, using: { [weak self](noti) in
+            self?.memoTableView.reloadData()
+        })
         // Do any additional setup after loading the view.
     }
     
