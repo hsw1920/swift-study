@@ -48,6 +48,24 @@ class MemoListTableViewController: UITableViewController {
         }
     }
     
+    // prepare : 세그웨이가 연결된 화면을 생성한 후 화면을 전환하기 직전에 호출됨
+    // sender를 UITableViewCell로 타입캐스팅한 후
+    // binding한 cell을 TableView로 전달하여 indexPath를 가져와야함 -> 몇번째 cell인지 확인 할 수 있음
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell, let indexPath =
+            tableView.indexPath(for: cell) {
+            // soutce : segue를 실행하는 화면
+            // destination : 새롭게 표시되는 화면
+            // memo를 전달하기 위해 실제 형식인 DetailViewController로 타입캐스팅 해야함
+            if let vc = segue.destination as? DetailViewController {
+                vc.memo = Memo.dummyMemoList[indexPath.row]
+            }
+            
+            // 이후 목록화면에서 전달한 메모를 보기화면에 표시해야함
+            
+        }
+    }
+    
     // View Life Cycle 중 단 한번만 실행됨
     override func viewDidLoad() {
         super.viewDidLoad()
