@@ -7,6 +7,8 @@
 
 import UIKit
 
+// selection과 seperator None으로 바꿔줌
+
 class DetailViewController: UIViewController {
     
     // 이전화면에서 전달한 메모가 저장됨 -> 저장된 메모를 보기화면에 표시해야함
