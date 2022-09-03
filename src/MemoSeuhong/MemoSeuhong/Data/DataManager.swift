@@ -45,7 +45,19 @@ class DataManager {
         } catch {
             print(error)
         }
+    }
+    
+    func addNewMemo(_ memo: String?) {
+        // 새로운 메모인스턴스 생성 -> Core Data가 만든 class이므로 context를 전달해야함
+        let newMemo = Memo(context: mainContext)
+        newMemo.content = memo
+        newMemo.insertDate = Date()
         
+        memoList.insert(newMemo, at: 0)
+        
+        // 인스턴스를 생성했다고해서 DB에 저장되는 것은 아님 -> 저장하려면 context를 저장해야함
+        // -> 아래쪽 saveContext를 호출해야함
+        saveContext()
     }
     
     
