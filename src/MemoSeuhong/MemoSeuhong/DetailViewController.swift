@@ -18,13 +18,21 @@ class DetailViewController: UIViewController {
     var memo: Memo?
     
     // memo 공유를 위해 IBAction 선언
-    @IBAction func share(_ sender: Any) {
+    @IBAction func share(_ sender: UIBarButtonItem) {
         // iOS가 기본적으로 제공하는 공유기능은 UIActivityViewController로 쉽게 가능함
         guard let memo = memo?.content else { return }
         let vc = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
         present(vc, animated: true, completion: nil)
-        
         //위의 코드 3줄만 써주면 나머지는 iOS에서 알아서 해결해줌
+        
+        // Support iPad
+        // iPad에서는 iPhone과 달리 공유버튼이 나오는 창이 다르기 때문에 popover를 따로 선언해줘야함
+        if let pc = vc.popoverPresentationController {
+            pc.barButtonItem = sender
+        }
+        
+        
+        
     }
     
     // 메모보기에서 메모삭제
