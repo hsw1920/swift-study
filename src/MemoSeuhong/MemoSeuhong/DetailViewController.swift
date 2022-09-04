@@ -114,6 +114,7 @@ extension DetailViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath)
             // 날짜를 표시 -> DateFormatter 활용
             cell.textLabel?.text = formatter.string(for: memo?.insertDate)
+            cell.textLabel?.textColor = UIColor(named: "MyColor")
             return cell
         default:
             fatalError()

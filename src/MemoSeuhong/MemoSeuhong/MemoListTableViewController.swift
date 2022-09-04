@@ -133,6 +133,7 @@ class MemoListTableViewController: UITableViewController {
         //cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
         // core data로 수정 후 -> string(for: )로 변경해야 함
         cell.detailTextLabel?.text = formatter.string(for: target.insertDate)
+        cell.detailTextLabel?.textColor = UIColor(named: "MyColor")
         return cell
     }
     
