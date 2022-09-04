@@ -54,7 +54,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // -> 싱글톤으로 이미 구현했기 때문에 위를 주석처리하고 단순하게 구현가능
         DataManager.shared.saveContext()
     }
-
+ 
 
 }
 
