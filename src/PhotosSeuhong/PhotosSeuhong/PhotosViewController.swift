@@ -9,6 +9,8 @@ import UIKit
 
 class PhotosViewController: UIViewController {
 
+    var fav: Bool = false
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     let list = Model.list
@@ -21,7 +23,14 @@ class PhotosViewController: UIViewController {
         
     }
     
-
+    @IBAction func tabbedCell(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ShowImageViewController")
+        vc?.fir
+        present(vc!, animated: true)
+        
+    }
+    
 }
 
 extension PhotosViewController: UICollectionViewDelegateFlowLayout {
@@ -45,6 +54,13 @@ extension PhotosViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         cell.configure(list[indexPath.row])
+        
+        if list[indexPath.row].favorite == false {
+            cell.favorite.isHidden = true
+        }
+        
+        
+        
         return cell
     }
     

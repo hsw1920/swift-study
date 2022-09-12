@@ -10,9 +10,10 @@ import UIKit
 
 class Model{
     let thumbnailImage: UIImage!
-    
+    let favorite: Bool
     init(_ name: String) {
         self.thumbnailImage = UIImage(named: name)
+        self.favorite = false
     }
     static let list: [Model] = (1...40).map { item in
         return Model(String(item))
