@@ -280,6 +280,12 @@
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="KrL-0k-oId" id="50x-FB-kqY"/>
+                        <outlet property="nameTextField" destination="zEd-qa-jJ1" id="2W2-3o-hsC"/>
+                        <outlet property="nickNameTextField" destination="sxg-1o-hbY" id="cZS-ei-NYI"/>
+                        <outlet property="passwordTextField" destination="M2s-1R-p0B" id="LND-aQ-O1t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pco-WA-UAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
