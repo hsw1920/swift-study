@@ -45,6 +45,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var popToLoginButton: UIButton!
     
     // 연산프로퍼티를 통해 한번에 모든 텍스트필드에 접근할 수 있도록 하였음
     var textFields: [UITextField] {
@@ -52,10 +53,14 @@ class RegisterViewController: UIViewController {
     }
     
     // MARK: - Lifecycle
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        // 코드로 직접 cornerRadius 설정 가능
+        // loginButton.cornerRadius = 10
         setupTextField()
+        setupAttribute()
     }
 
     
@@ -119,6 +124,26 @@ class RegisterViewController: UIViewController {
         }
     }
 
+    private func setupAttribute() {
+        // registerButton
+        
+        let text1 = "계정이 있으신가요?"
+        let text2 = "로그인"
+        
+        let font1 = UIFont.systemFont(ofSize: 13)
+        let font2 = UIFont.boldSystemFont(ofSize: 13)
+        
+        let color1 = UIColor.darkGray
+        let color2 = UIColor.facebookColor
+        
+        let attributes = generateButtonAttribute(
+            self.popToLoginButton,
+            texts: text1,text2,
+            fonts: font1,font2,
+            colors: color1,color2)
+        
+        self.popToLoginButton.setAttributedTitle(attributes, for: .normal)
+    }
     
 }
 
@@ -140,3 +165,4 @@ extension String {
         return emailTest.evaluate(with: self)
     }
 }
+

@@ -54,6 +54,11 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfv-Wd-ceW"/>
                                 </connections>
@@ -139,6 +144,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Na-s2-xjf"/>
+                    <connections>
+                        <outlet property="registerButton" destination="b0a-7p-HID" id="1fg-qB-M9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,6 +181,11 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="f.square.fill" catalog="system" title="Facebook으로 로그인" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoG-8g-rvE">
                                 <rect key="frame" x="183.66666666666666" y="265.33333333333331" width="22.666666666666657" height="15.666666666666686"/>
@@ -228,6 +241,11 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="가입"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaF-VH-AfS">
                                 <rect key="frame" x="10" y="758.66666666666663" width="370" height="1"/>
@@ -286,6 +304,7 @@
                         <outlet property="nameTextField" destination="zEd-qa-jJ1" id="2W2-3o-hsC"/>
                         <outlet property="nickNameTextField" destination="sxg-1o-hbY" id="cZS-ei-NYI"/>
                         <outlet property="passwordTextField" destination="M2s-1R-p0B" id="LND-aQ-O1t"/>
+                        <outlet property="popToLoginButton" destination="436-qW-p7r" id="0CO-mp-LJC"/>
                         <outlet property="signupButton" destination="QuF-lo-CbD" id="uqZ-Gg-u6r"/>
                     </connections>
                 </viewController>
