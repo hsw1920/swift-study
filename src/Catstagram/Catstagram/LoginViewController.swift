@@ -37,5 +37,18 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func registerDidTap(_ sender: UIButton) {
+        // 화면전환
+        // 1. 스토리보드를 생성
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // 2. 뷰컨트롤러 생성
+        let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterViewController
+        
+        // 3. 화면전환 메소드를 이용해서 화면을 전환
+        // modal로 아래서 위로 animate
+//        self.present(registerViewController, animated: true, completion: nil)
+        // 옆으로 push하여 view가 등장
+        self.navigationController?.pushViewController(registerViewController, animated: true)
+        
     }
 }
