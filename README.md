@@ -2,7 +2,7 @@
 ### 나를 깎는 레포지토리 
 
 
-x
+| [name](url) | description | duration | ✅ ⬜ |
 
 | Project Name | Description | Duration | Complete |
 |:---|:---|:---|:---:|
