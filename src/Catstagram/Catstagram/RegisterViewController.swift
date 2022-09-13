@@ -8,8 +8,15 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-    
     // MARK: - Properties
+    var email = String()
+    var name = String()
+    var nickName = String()
+    var password  = String()
+    
+    // userInfo 를 클로저로 전달
+    var userInfo: ((UserInfo) -> Void)?
+    
     
     // 회원가입을 위한 정보제약조건
     // 유효성검사를 위한 프로퍼티
@@ -61,6 +68,10 @@ class RegisterViewController: UIViewController {
         // loginButton.cornerRadius = 10
         setupTextField()
         setupAttribute()
+        
+        // bug fix
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        
     }
 
     
@@ -75,18 +86,40 @@ class RegisterViewController: UIViewController {
         switch sender {
         case emailTextField:
             self.isValidEmail = text.isValidEmail()
+            self.email = text
         case nameTextField:
             self.isValidName = text.count > 2
+            self.name = text
         case nickNameTextField:
             self.isValidNickName = text.count > 2
+            self.nickName = text
         case passwordTextField:
             self.isValidPassword = text.isValidPassword()
+            self.password = text
         default:
             fatalError("Missing TextField...")
         }
         
     }
     
+    @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
+        // 뒤로가기
+        self.navigationController?.popViewController(animated: true)
+        
+        
+    }
+    @IBAction func registerButtonDIdtap(_ sender: UIButton) {
+        // 뒤로가기
+        self.navigationController?.popViewController(animated: true)
+        let userInfo = UserInfo(
+            email: self.email,
+            name: self.name,
+            nickName: self.nickName,
+            password: self.password
+        )
+        
+        self.userInfo?(userInfo)
+    }
     
     
     // MARK: - Helper
