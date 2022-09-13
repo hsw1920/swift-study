@@ -57,9 +57,13 @@ class LoginViewController: UIViewController {
         if userInfo.email == self.email
             && userInfo.password == self.password {
             // 로그인 성공시
-            let vc = storyboard?.instantiateViewController(withIdentifier: "TestVC") as! TestViewController
-            //self.present(vc, animated: true, completion: nil) // modal로 화면전환
-            navigationController?.pushViewController(vc, animated: true) // pushView로 화면전환
+            // 내용의 주제가 다른경우 TabBar로 사용함. (로그인/회원가입 -> 어플Detail)
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil) // modal로 화면전환
+            
+            // 로그인이나 회원가입 등 상세하게 들어가는 경우에는 navigation을 사용한다.
+            //navigationController?.pushViewController(vc, animated: true) // pushView로 화면전환
         } else {
             // 로그인 실패시?
             // ...
