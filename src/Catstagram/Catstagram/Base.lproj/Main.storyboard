@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kyB-6t-Zud">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dtW-Hc-pPC">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -84,7 +85,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBP-QE-gpf">
-                                <rect key="frame" x="117.00000000000001" y="618.33333333333337" width="156.33333333333337" height="31"/>
+                                <rect key="frame" x="115.00000000000001" y="618.33333333333337" width="160.33333333333337" height="34.333333333333371"/>
                                 <color key="tintColor" name="facebookColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="f.square.fill" catalog="system" title="Facebook으로 로그인">
@@ -92,14 +93,14 @@
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-Jr-rqf">
-                                <rect key="frame" x="10" y="772" width="370" height="1"/>
+                                <rect key="frame" x="10" y="768.66666666666663" width="370" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="MWv-of-kon"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-7p-HID">
-                                <rect key="frame" x="103" y="788" width="184" height="31"/>
+                                <rect key="frame" x="86.333333333333329" y="784.66666666666663" width="217.66666666666669" height="34.333333333333371"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="계정이 없으신가요? 가입하기"/>
@@ -184,30 +185,86 @@
         <!--Home-->
         <scene sceneID="mly-c7-8T0">
             <objects>
-                <viewController id="Qeh-o7-8Q5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="Qeh-o7-8Q5" customClass="HomeViewController" customModule="Catstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="thP-47-Mjn">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-Zv-gDa">
-                                <rect key="frame" x="160" y="407" width="70" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrP-T4-IKs">
+                                <rect key="frame" x="0.0" y="47" width="390" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lef-Gc-j3q">
+                                        <rect key="frame" x="15" y="5" width="140" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="ZQ0-6d-Qgi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMR-1R-4Bt">
+                                        <rect key="frame" x="350" y="12.666666666666664" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="FMM-LQ-BV9"/>
+                                            <constraint firstAttribute="width" constant="25" id="hcs-lu-fP5"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_send"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaJ-KG-ARa">
+                                        <rect key="frame" x="305" y="12.666666666666664" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="7Id-i7-Zek"/>
+                                            <constraint firstAttribute="height" constant="25" id="yvG-8V-HFL"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_heart"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCu-PR-CrG">
+                                        <rect key="frame" x="260" y="12.666666666666664" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="J89-rr-aYP"/>
+                                            <constraint firstAttribute="width" constant="25" id="fhh-ri-L1e"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_upload"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lef-Gc-j3q" firstAttribute="top" secondItem="yrP-T4-IKs" secondAttribute="top" constant="5" id="3gX-cv-hcj"/>
+                                    <constraint firstItem="WCu-PR-CrG" firstAttribute="centerY" secondItem="yrP-T4-IKs" secondAttribute="centerY" id="4sP-l3-WB9"/>
+                                    <constraint firstAttribute="height" constant="50" id="8Wa-xW-UdD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lef-Gc-j3q" secondAttribute="bottom" constant="5" id="DcS-Oo-9kY"/>
+                                    <constraint firstItem="zaJ-KG-ARa" firstAttribute="leading" secondItem="WCu-PR-CrG" secondAttribute="trailing" constant="20" id="NSg-JL-Kib"/>
+                                    <constraint firstAttribute="trailing" secondItem="hMR-1R-4Bt" secondAttribute="trailing" constant="15" id="NvD-3J-mRR"/>
+                                    <constraint firstItem="Lef-Gc-j3q" firstAttribute="leading" secondItem="yrP-T4-IKs" secondAttribute="leading" constant="15" id="PZL-NH-CQ3"/>
+                                    <constraint firstItem="zaJ-KG-ARa" firstAttribute="centerY" secondItem="yrP-T4-IKs" secondAttribute="centerY" id="XJf-oi-zLw"/>
+                                    <constraint firstItem="hMR-1R-4Bt" firstAttribute="leading" secondItem="zaJ-KG-ARa" secondAttribute="trailing" constant="20" id="fkE-ur-8ck"/>
+                                    <constraint firstItem="hMR-1R-4Bt" firstAttribute="centerY" secondItem="yrP-T4-IKs" secondAttribute="centerY" id="le5-e5-603"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CXA-pK-NaN">
+                                <rect key="frame" x="0.0" y="97" width="390" height="664"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bxt-5v-aTz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yA0-Zv-gDa" firstAttribute="centerX" secondItem="thP-47-Mjn" secondAttribute="centerX" id="1o9-Lf-k0N"/>
-                            <constraint firstItem="yA0-Zv-gDa" firstAttribute="centerY" secondItem="thP-47-Mjn" secondAttribute="centerY" id="5t7-Ob-o7S"/>
+                            <constraint firstItem="CXA-pK-NaN" firstAttribute="leading" secondItem="Bxt-5v-aTz" secondAttribute="leading" id="0H1-rj-pEJ"/>
+                            <constraint firstItem="Bxt-5v-aTz" firstAttribute="trailing" secondItem="CXA-pK-NaN" secondAttribute="trailing" id="Ikg-ay-Pex"/>
+                            <constraint firstItem="yrP-T4-IKs" firstAttribute="top" secondItem="Bxt-5v-aTz" secondAttribute="top" id="PPR-WM-Y0F"/>
+                            <constraint firstItem="Bxt-5v-aTz" firstAttribute="trailing" secondItem="yrP-T4-IKs" secondAttribute="trailing" id="eUU-yd-6dK"/>
+                            <constraint firstItem="CXA-pK-NaN" firstAttribute="top" secondItem="yrP-T4-IKs" secondAttribute="bottom" id="hC1-lY-rJz"/>
+                            <constraint firstItem="yrP-T4-IKs" firstAttribute="leading" secondItem="Bxt-5v-aTz" secondAttribute="leading" id="ioZ-Xh-3YZ"/>
+                            <constraint firstItem="Bxt-5v-aTz" firstAttribute="bottom" secondItem="CXA-pK-NaN" secondAttribute="bottom" id="vst-Z7-bhB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="Flj-63-NIk"/>
+                    <connections>
+                        <outlet property="tableView" destination="CXA-pK-NaN" id="QnR-00-OrX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tss-tQ-izU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="1755"/>
+            <point key="canvasLocation" x="230.76923076923077" y="1754.5023696682463"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uqY-Rh-rmS">
@@ -236,19 +293,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="fmi-Vg-uX8">
-                                <rect key="frame" x="70" y="88" width="250" height="75"/>
+                                <rect key="frame" x="70" y="91" width="250" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fmi-Vg-uX8" secondAttribute="height" multiplier="10:3" id="6F5-qa-hpp"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구들의 사진과 동영상을 보려면  가입하세요" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VM-8Z-sqc">
-                                <rect key="frame" x="109" y="183" width="172" height="31.333333333333343"/>
+                                <rect key="frame" x="109" y="186" width="172" height="31.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3z1-3A-CiC">
-                                <rect key="frame" x="10" y="239.33333333333337" width="370" height="35"/>
+                                <rect key="frame" x="10" y="242.33333333333337" width="370" height="35"/>
                                 <color key="backgroundColor" name="facebookColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="SXX-RP-0f1"/>
@@ -263,20 +320,20 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoG-8g-rvE">
-                                <rect key="frame" x="183.66666666666666" y="309.33333333333331" width="22.666666666666657" height="15.666666666666686"/>
+                                <rect key="frame" x="183.66666666666666" y="312.33333333333331" width="22.666666666666657" height="15.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLs-vX-tyt">
-                                <rect key="frame" x="221.33333333333337" y="316.66666666666669" width="158.66666666666663" height="1"/>
+                                <rect key="frame" x="221.33333333333337" y="319.66666666666669" width="158.66666666666663" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="7up-JL-SBV"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-3w-PTA">
-                                <rect key="frame" x="10" y="367.66666666666669" width="370" height="194.00000000000006"/>
+                                <rect key="frame" x="10" y="370.66666666666669" width="370" height="194.00000000000006"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="휴대폰 번호 또는 이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KrL-0k-oId">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="32"/>
@@ -301,14 +358,14 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpW-69-tKv">
-                                <rect key="frame" x="10" y="316.66666666666669" width="158.66666666666666" height="1"/>
+                                <rect key="frame" x="10" y="319.66666666666669" width="158.66666666666666" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="tJS-Ey-1kY"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuF-lo-CbD">
-                                <rect key="frame" x="5" y="586.66666666666663" width="380" height="45"/>
+                                <rect key="frame" x="5" y="589.66666666666663" width="380" height="45"/>
                                 <color key="backgroundColor" name="disabledButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="FfF-SH-UWs"/>
@@ -404,7 +461,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kyB-6t-Zud" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UQM-7t-Bef">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -418,9 +475,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
+        <image name="ic_home_heart" width="512" height="512"/>
+        <image name="ic_home_send" width="512" height="512"/>
+        <image name="ic_home_upload" width="512" height="512"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
