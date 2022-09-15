@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostCollectionViewCell" id="gTV-IL-0wX" customClass="PostCollectionViewCell" customModule="Catstagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="263"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-Zb-d7t">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="263"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QNr-Zb-d7t" secondAttribute="bottom" id="5DD-sj-tcd"/>
+                <constraint firstAttribute="trailing" secondItem="QNr-Zb-d7t" secondAttribute="trailing" id="Qjp-0i-p7A"/>
+                <constraint firstItem="QNr-Zb-d7t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rFh-wI-9ey"/>
+                <constraint firstItem="QNr-Zb-d7t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ruh-Hg-2kH"/>
+            </constraints>
+            <size key="customSize" width="328" height="263"/>
+            <connections>
+                <outlet property="postImageView" destination="QNr-Zb-d7t" id="4rb-gy-9dB"/>
+            </connections>
+            <point key="canvasLocation" x="195.38461538461539" y="63.625592417061611"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,6 +10,8 @@
 		6046795F28D2E159007EC8B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6046795E28D2E159007EC8B2 /* ProfileViewController.swift */; };
 		6046796328D2E49C007EC8B2 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6046796128D2E49C007EC8B2 /* ProfileCollectionViewCell.swift */; };
 		6046796428D2E49C007EC8B2 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6046796228D2E49C007EC8B2 /* ProfileCollectionViewCell.xib */; };
+		6046796928D2F7C6007EC8B2 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6046796728D2F7C6007EC8B2 /* PostCollectionViewCell.swift */; };
+		6046796A28D2F7C6007EC8B2 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6046796828D2F7C6007EC8B2 /* PostCollectionViewCell.xib */; };
 		6064A35528CF05580045F533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A35428CF05580045F533 /* AppDelegate.swift */; };
 		6064A35728CF05580045F533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A35628CF05580045F533 /* SceneDelegate.swift */; };
 		6064A35C28CF05580045F533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6064A35A28CF05580045F533 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		6046795E28D2E159007EC8B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6046796128D2E49C007EC8B2 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		6046796228D2E49C007EC8B2 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		6046796728D2F7C6007EC8B2 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		6046796828D2F7C6007EC8B2 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		6064A35128CF05580045F533 /* Catstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6064A35428CF05580045F533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6064A35628CF05580045F533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +83,28 @@
 		6046796028D2E487007EC8B2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				6046796628D2F7B2007EC8B2 /* PostCell */,
+				6046796528D2F7A1007EC8B2 /* ProfileCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6046796528D2F7A1007EC8B2 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
 				6046796128D2E49C007EC8B2 /* ProfileCollectionViewCell.swift */,
 				6046796228D2E49C007EC8B2 /* ProfileCollectionViewCell.xib */,
 			);
-			path = Cell;
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		6046796628D2F7B2007EC8B2 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				6046796728D2F7C6007EC8B2 /* PostCollectionViewCell.swift */,
+				6046796828D2F7C6007EC8B2 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 		6064A34828CF05580045F533 = {
@@ -202,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6046796A28D2F7C6007EC8B2 /* PostCollectionViewCell.xib in Resources */,
 				6064A36128CF055B0045F533 /* LaunchScreen.storyboard in Resources */,
 				6072C91728D0870600549415 /* FeedTableViewCell.xib in Resources */,
 				6064A35E28CF055B0045F533 /* Assets.xcassets in Resources */,
@@ -224,6 +247,7 @@
 				6064A36D28CF1D340045F533 /* RegisterViewController.swift in Sources */,
 				60DE989428D17F9A00B2A9D3 /* StoryTableViewCell.swift in Sources */,
 				60DE989928D1836700B2A9D3 /* StoryCollectionViewCell.swift in Sources */,
+				6046796928D2F7C6007EC8B2 /* PostCollectionViewCell.swift in Sources */,
 				6064A35728CF05580045F533 /* SceneDelegate.swift in Sources */,
 				607B429928D02BEB00B1BAE8 /* UserInfo.swift in Sources */,
 				6072C91328D063B900549415 /* HomeViewController.swift in Sources */,
