@@ -12,11 +12,11 @@ class FeedDataManager {
         AF.request("https://api.thecatapi.com/v1/images/search", method: .get, parameters: parameters).validate().responseDecodable(of: [FeedModel].self) { response in
             switch response.result {
             case .success(let result):
-                print("성공")
+                //print("성공")
                 viewController.successAPI(result)
             case .failure(let error):
                 print(error.localizedDescription)
-                print("실패")
+                //print("실패")
             }
         }
     }

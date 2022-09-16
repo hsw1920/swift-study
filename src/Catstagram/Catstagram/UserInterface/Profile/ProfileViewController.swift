@@ -11,10 +11,18 @@ class ProfileViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
+    var userPosts: [GetUserPosts]? {
+        didSet { self.profileCollectionView.reloadData() }
+    }
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        
+        //test code
+        //UserFeedDataManager().getUserFeed(self)
+        setupData()
     }
     
     // MARK: - Actions
@@ -38,6 +46,12 @@ class ProfileViewController: UIViewController {
                 bundle: nil),
             forCellWithReuseIdentifier: "PostCollectionViewCell")
     }
+    
+    private func setupData() {
+        UserFeedDataManager().getUserFeed(self)
+        // 성공했을 때 실행할 메소드 만들어 줘야함 -> extension
+    }
+    
 }
 
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -55,7 +69,8 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         case 0:
             return 1
         default:
-            return 24
+            //return 24
+            return userPosts?.count ?? 0
         }
     }
     
@@ -76,6 +91,12 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
                     PostCollectionViewCell else {
                 return UICollectionViewCell()
                 //또는 fatalError("셀 타입캐스팅 실패...")
+            }
+            
+            let itemIndex = indexPath.item
+            
+            if let cellData = self.userPosts {
+                cell.setupData(cellData[itemIndex].postImgUrl) // <-- 데이터 전달
             }
             return cell
         }
@@ -127,3 +148,10 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - API 통신 메소드
+
+extension ProfileViewController {
+    func successFeedAPI(_ result: UserFeedModel) {
+        self.userPosts = result.result.getUserPosts
+    }
+}
