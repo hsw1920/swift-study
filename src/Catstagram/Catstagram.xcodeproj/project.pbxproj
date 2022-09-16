@@ -20,7 +20,7 @@
 		6064A35C28CF05580045F533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6064A35A28CF05580045F533 /* Main.storyboard */; };
 		6064A35E28CF055B0045F533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6064A35D28CF055B0045F533 /* Assets.xcassets */; };
 		6064A36128CF055B0045F533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6064A35F28CF055B0045F533 /* LaunchScreen.storyboard */; };
-		6064A36928CF15D80045F533 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A36828CF15D80045F533 /* Color+Extension.swift */; };
+		6064A36928CF15D80045F533 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A36828CF15D80045F533 /* UIColor+Extension.swift */; };
 		6064A36B28CF170A0045F533 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A36A28CF170A0045F533 /* LoginViewController.swift */; };
 		6064A36D28CF1D340045F533 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A36C28CF1D340045F533 /* RegisterViewController.swift */; };
 		6072C91328D063B900549415 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6072C91228D063B900549415 /* HomeViewController.swift */; };
@@ -57,7 +57,7 @@
 		6064A35D28CF055B0045F533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6064A36028CF055B0045F533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6064A36228CF055B0045F533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6064A36828CF15D80045F533 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		6064A36828CF15D80045F533 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		6064A36A28CF170A0045F533 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6064A36C28CF1D340045F533 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6072C91228D063B900549415 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -155,17 +155,13 @@
 		6064A35328CF05580045F533 /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
-				6046795D28D2E13E007EC8B2 /* Profile */,
-				6072C91128D063A900549415 /* Home */,
-				6064A35428CF05580045F533 /* AppDelegate.swift */,
-				6064A35628CF05580045F533 /* SceneDelegate.swift */,
+				60F44D4F28D44D8200CB9E34 /* UserInterface */,
+				60F44D4D28D44D5F00CB9E34 /* App */,
 				6064A35A28CF05580045F533 /* Main.storyboard */,
-				6064A36C28CF1D340045F533 /* RegisterViewController.swift */,
 				6084DCCF28CF61360060FBE9 /* UIView+Extenstion.swift */,
 				6084DCD128CF626E0060FBE9 /* UIViewController+Extension.swift */,
-				6064A36A28CF170A0045F533 /* LoginViewController.swift */,
 				6064A35D28CF055B0045F533 /* Assets.xcassets */,
-				6064A36828CF15D80045F533 /* Color+Extension.swift */,
+				6064A36828CF15D80045F533 /* UIColor+Extension.swift */,
 				6064A35F28CF055B0045F533 /* LaunchScreen.storyboard */,
 				6064A36228CF055B0045F533 /* Info.plist */,
 				607B429828D02BEB00B1BAE8 /* UserInfo.swift */,
@@ -205,6 +201,34 @@
 				60DE989828D1836700B2A9D3 /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		60F44D4D28D44D5F00CB9E34 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6064A35428CF05580045F533 /* AppDelegate.swift */,
+				6064A35628CF05580045F533 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		60F44D4E28D44D6C00CB9E34 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6064A36C28CF1D340045F533 /* RegisterViewController.swift */,
+				6064A36A28CF170A0045F533 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		60F44D4F28D44D8200CB9E34 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				6046795D28D2E13E007EC8B2 /* Profile */,
+				6072C91128D063A900549415 /* Home */,
+				60F44D4E28D44D6C00CB9E34 /* Authentication */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 		6524B0B1344497400B7A66A9 /* Pods */ = {
@@ -363,7 +387,7 @@
 				6046796328D2E49C007EC8B2 /* ProfileCollectionViewCell.swift in Sources */,
 				6046795F28D2E159007EC8B2 /* ProfileViewController.swift in Sources */,
 				604DC5C728D412BD005228D4 /* FeedDataManager.swift in Sources */,
-				6064A36928CF15D80045F533 /* Color+Extension.swift in Sources */,
+				6064A36928CF15D80045F533 /* UIColor+Extension.swift in Sources */,
 				6072C91628D0870600549415 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
