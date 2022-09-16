@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var arrayCat: [FeedModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,11 @@ class HomeViewController: UIViewController {
         tableView.register(feedNib, forCellReuseIdentifier: "FeedTableViewCell")
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
+        
+        // API 연동
+        let input = FeedAPIInput(limit: 30, page: 10)
+        // data가 연동되는 VC가 self(HomeViewController 자신)이란걸 알려줌
+        FeedDataManager().feedDataManager(input, self)
     }
     
 }
@@ -30,13 +37,11 @@ class HomeViewController: UIViewController {
 
 // MARK: - extension
 
-extension HomeViewController: UITableViewDelegate {
-    
-}
 
-extension HomeViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        // 배열 크기에 맞게 세팅
+        return arrayCat.count+1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,7 +55,12 @@ extension HomeViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell else {
                 return UITableViewCell()
             }
-            cell.selectionStyle = .none
+            //cell.selectionStyle = .none
+            if let urlString = arrayCat[indexPath.row-1].url {
+                let url = URL(string: urlString)
+                cell.imageViewFeed.kf.setImage(with: url)
+            }
+                
             return cell
         }
         
@@ -92,4 +102,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: 50, height: 60)
     }
     
+}
+
+extension HomeViewController {
+    func successAPI(_ result: [FeedModel]) {
+        arrayCat = result
+        tableView.reloadData()
+    }
 }
