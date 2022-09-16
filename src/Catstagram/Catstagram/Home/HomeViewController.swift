@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var arrayCat: [FeedModel] = []
     
+    let imagePickerViewController = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +32,17 @@ class HomeViewController: UIViewController {
         let input = FeedAPIInput(limit: 30, page: 10)
         // data가 연동되는 VC가 self(HomeViewController 자신)이란걸 알려줌
         FeedDataManager().feedDataManager(input, self)
+        
+        // delegate 추가
+        imagePickerViewController.delegate = self
+    }
+    
+    // present를 통해 앨범을 띄워주어야함.
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        // 카메라인지(.camera) 앨범(.photoLibrary) 인지 선택함
+        self.imagePickerViewController.sourceType = .photoLibrary
+        // present를 통해 해당 뷰로 이동함
+        self.present(imagePickerViewController, animated: true, completion: nil)
     }
     
 }
@@ -60,6 +73,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 let url = URL(string: urlString)
                 cell.imageViewFeed.kf.setImage(with: url)
             }
+            
+            // 서버에게 이미지 파일 자체를 보내는 경우에는
+            // upload를 이용하여 multipart 형태로 보내게됨
+            // 본 강의에서는 url을 string 형태로 전달함
                 
             return cell
         }
@@ -108,5 +125,23 @@ extension HomeViewController {
     func successAPI(_ result: [FeedModel]) {
         arrayCat = result
         tableView.reloadData()
+    }
+}
+
+extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    // 어떤 이미지를 pick을 하는것이 끝났을 때 발생하는 메소드
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        // 1. data를 firebase로 저장소 url을 연결하거나
+        // 2. multiparameter를 통해 파일 src자체를 주거나
+        
+        //여기서는 1번방법
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            let imageString = "gs://catstargram-d7fbf.appspot.com/Cat"
+            let input = FeeduploadInput(content: "저희 상이입니다. 귀엽지 않나요?", postImgsUrl: [imageString])
+            FeedUploadDataManager().posts(self, input)
+            
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
