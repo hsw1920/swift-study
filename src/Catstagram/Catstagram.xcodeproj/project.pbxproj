@@ -23,6 +23,7 @@
 		6064A36928CF15D80045F533 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A36828CF15D80045F533 /* UIColor+Extension.swift */; };
 		6064A36B28CF170A0045F533 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A36A28CF170A0045F533 /* LoginViewController.swift */; };
 		6064A36D28CF1D340045F533 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064A36C28CF1D340045F533 /* RegisterViewController.swift */; };
+		606F789028D56B880003C0F1 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F788F28D56B880003C0F1 /* DeleteUserFeed.swift */; };
 		6072C91328D063B900549415 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6072C91228D063B900549415 /* HomeViewController.swift */; };
 		6072C91628D0870600549415 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6072C91428D0870600549415 /* FeedTableViewCell.swift */; };
 		6072C91728D0870600549415 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6072C91528D0870600549415 /* FeedTableViewCell.xib */; };
@@ -62,6 +63,7 @@
 		6064A36828CF15D80045F533 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		6064A36A28CF170A0045F533 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6064A36C28CF1D340045F533 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		606F788F28D56B880003C0F1 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		6072C91228D063B900549415 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6072C91428D0870600549415 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		6072C91528D0870600549415 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -174,6 +176,22 @@
 			path = Catstagram;
 			sourceTree = "<group>";
 		};
+		606F788D28D56B5B0003C0F1 /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				60F44D5128D4524100CB9E34 /* UserFeedModel.swift */,
+			);
+			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		606F788E28D56B6A0003C0F1 /* DeleteUserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				606F788F28D56B880003C0F1 /* DeleteUserFeed.swift */,
+			);
+			path = DeleteUserFeed;
+			sourceTree = "<group>";
+		};
 		6072C91128D063A900549415 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,8 +257,9 @@
 		60F44D5028D4522900CB9E34 /* UserFeedDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				60F44D5128D4524100CB9E34 /* UserFeedModel.swift */,
 				60F44D5328D4562500CB9E34 /* UserFeedDataManager.swift */,
+				606F788E28D56B6A0003C0F1 /* DeleteUserFeed */,
+				606F788D28D56B5B0003C0F1 /* UserFeed */,
 			);
 			path = UserFeedDataManager;
 			sourceTree = "<group>";
@@ -403,6 +422,7 @@
 				6046796328D2E49C007EC8B2 /* ProfileCollectionViewCell.swift in Sources */,
 				6046795F28D2E159007EC8B2 /* ProfileViewController.swift in Sources */,
 				604DC5C728D412BD005228D4 /* FeedDataManager.swift in Sources */,
+				606F789028D56B880003C0F1 /* DeleteUserFeed.swift in Sources */,
 				6064A36928CF15D80045F533 /* UIColor+Extension.swift in Sources */,
 				6072C91628D0870600549415 /* FeedTableViewCell.swift in Sources */,
 			);
