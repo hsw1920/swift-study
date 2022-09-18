@@ -8,4 +8,5 @@ target 'Catstagram' do
   # Pods for Catstagram
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 7.0'
+  pod 'SnapKit', '~> 5.6.0'
 end

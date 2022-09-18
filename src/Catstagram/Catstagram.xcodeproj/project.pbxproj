@@ -30,6 +30,11 @@
 		607B429928D02BEB00B1BAE8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607B429828D02BEB00B1BAE8 /* UserInfo.swift */; };
 		6084DCD028CF61360060FBE9 /* UIView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6084DCCF28CF61360060FBE9 /* UIView+Extenstion.swift */; };
 		6084DCD228CF626E0060FBE9 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6084DCD128CF626E0060FBE9 /* UIViewController+Extension.swift */; };
+		609BA06F28D6AF77008F4023 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609BA06E28D6AF77008F4023 /* ReelsViewController.swift */; };
+		60B35E6228D6C0F200290F03 /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B35E6128D6C0F200290F03 /* ReelsCell.swift */; };
+		60B35E6428D6C26200290F03 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B35E6328D6C26200290F03 /* VideoPlayerView.swift */; };
+		60B35E6728D6C3B700290F03 /* dummyVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60B35E6528D6C3B700290F03 /* dummyVideo1.mp4 */; };
+		60B35E6828D6C3B700290F03 /* dummyVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60B35E6628D6C3B700290F03 /* dummyVideo2.mp4 */; };
 		60CF792528D42EE60097FF3F /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF792428D42EE60097FF3F /* FeedUploadInput.swift */; };
 		60CF792728D42F1B0097FF3F /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF792628D42F1B0097FF3F /* FeedUploadModel.swift */; };
 		60CF792928D42FE20097FF3F /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF792828D42FE20097FF3F /* FeedUploadDataManager.swift */; };
@@ -70,6 +75,11 @@
 		607B429828D02BEB00B1BAE8 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		6084DCCF28CF61360060FBE9 /* UIView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstion.swift"; sourceTree = "<group>"; };
 		6084DCD128CF626E0060FBE9 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		609BA06E28D6AF77008F4023 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		60B35E6128D6C0F200290F03 /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		60B35E6328D6C26200290F03 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		60B35E6528D6C3B700290F03 /* dummyVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyVideo1.mp4; sourceTree = "<group>"; };
+		60B35E6628D6C3B700290F03 /* dummyVideo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyVideo2.mp4; sourceTree = "<group>"; };
 		60CF792428D42EE60097FF3F /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
 		60CF792628D42F1B0097FF3F /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
 		60CF792828D42FE20097FF3F /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
@@ -165,13 +175,17 @@
 				60F44D4F28D44D8200CB9E34 /* UserInterface */,
 				60F44D4D28D44D5F00CB9E34 /* App */,
 				6064A35A28CF05580045F533 /* Main.storyboard */,
+				609BA06E28D6AF77008F4023 /* ReelsViewController.swift */,
+				60B35E6128D6C0F200290F03 /* ReelsCell.swift */,
+				60B35E6328D6C26200290F03 /* VideoPlayerView.swift */,
 				6084DCCF28CF61360060FBE9 /* UIView+Extenstion.swift */,
 				6084DCD128CF626E0060FBE9 /* UIViewController+Extension.swift */,
 				6064A35D28CF055B0045F533 /* Assets.xcassets */,
 				6064A36828CF15D80045F533 /* UIColor+Extension.swift */,
 				6064A35F28CF055B0045F533 /* LaunchScreen.storyboard */,
 				6064A36228CF055B0045F533 /* Info.plist */,
-				607B429828D02BEB00B1BAE8 /* UserInfo.swift */,
+				60B35E6528D6C3B700290F03 /* dummyVideo1.mp4 */,
+				60B35E6628D6C3B700290F03 /* dummyVideo2.mp4 */,
 			);
 			path = Catstagram;
 			sourceTree = "<group>";
@@ -240,6 +254,7 @@
 			children = (
 				6064A36C28CF1D340045F533 /* RegisterViewController.swift */,
 				6064A36A28CF170A0045F533 /* LoginViewController.swift */,
+				607B429828D02BEB00B1BAE8 /* UserInfo.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -342,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6046796A28D2F7C6007EC8B2 /* PostCollectionViewCell.xib in Resources */,
+				60B35E6728D6C3B700290F03 /* dummyVideo1.mp4 in Resources */,
 				6064A36128CF055B0045F533 /* LaunchScreen.storyboard in Resources */,
 				6072C91728D0870600549415 /* FeedTableViewCell.xib in Resources */,
 				6064A35E28CF055B0045F533 /* Assets.xcassets in Resources */,
@@ -349,6 +365,7 @@
 				60DE989528D17F9A00B2A9D3 /* StoryTableViewCell.xib in Resources */,
 				60DE989A28D1836700B2A9D3 /* StoryCollectionViewCell.xib in Resources */,
 				6064A35C28CF05580045F533 /* Main.storyboard in Resources */,
+				60B35E6828D6C3B700290F03 /* dummyVideo2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +431,7 @@
 				6046796928D2F7C6007EC8B2 /* PostCollectionViewCell.swift in Sources */,
 				6064A35728CF05580045F533 /* SceneDelegate.swift in Sources */,
 				607B429928D02BEB00B1BAE8 /* UserInfo.swift in Sources */,
+				60B35E6228D6C0F200290F03 /* ReelsCell.swift in Sources */,
 				6072C91328D063B900549415 /* HomeViewController.swift in Sources */,
 				60CF792928D42FE20097FF3F /* FeedUploadDataManager.swift in Sources */,
 				6084DCD228CF626E0060FBE9 /* UIViewController+Extension.swift in Sources */,
@@ -423,7 +441,9 @@
 				6046795F28D2E159007EC8B2 /* ProfileViewController.swift in Sources */,
 				604DC5C728D412BD005228D4 /* FeedDataManager.swift in Sources */,
 				606F789028D56B880003C0F1 /* DeleteUserFeed.swift in Sources */,
+				60B35E6428D6C26200290F03 /* VideoPlayerView.swift in Sources */,
 				6064A36928CF15D80045F533 /* UIColor+Extension.swift in Sources */,
+				609BA06F28D6AF77008F4023 /* ReelsViewController.swift in Sources */,
 				6072C91628D0870600549415 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
