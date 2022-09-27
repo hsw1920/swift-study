@@ -83,7 +83,7 @@ class ViewController: UIViewController {
         }
         
         setBindings()
-        #imageLiteral(resourceName: "simulator_screenshot_CCC6EB3B-3640-498F-8B28-A1676613DCDC.png")
+        
     } // ViewDidLoad
     
     //MARK: - 버튼 액션
