@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  KakaoLogin-tutorial
+//
+//  Created by 홍승완 on 2022/09/27.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+KAKAO_NATIVE_APP_KEY = 08b934e61d553bd1fbb2fa4c88ccdb0c
