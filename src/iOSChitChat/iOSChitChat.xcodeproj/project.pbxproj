@@ -9,22 +9,28 @@
 /* Begin PBXBuildFile section */
 		6077F54F295197A8008415A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077F54E295197A8008415A5 /* AppDelegate.swift */; };
 		6077F551295197A8008415A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077F550295197A8008415A5 /* SceneDelegate.swift */; };
-		6077F553295197A8008415A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077F552295197A8008415A5 /* ViewController.swift */; };
+		6077F553295197A8008415A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077F552295197A8008415A5 /* LoginViewController.swift */; };
 		6077F558295197AA008415A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6077F557295197AA008415A5 /* Assets.xcassets */; };
 		6077F55B295197AA008415A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6077F559295197AA008415A5 /* LaunchScreen.storyboard */; };
 		60C2C4CF29519DD2008A3B11 /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = 60C2C4CE29519DD2008A3B11 /* StreamChat */; };
 		60C2C4D129519DD2008A3B11 /* StreamChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 60C2C4D029519DD2008A3B11 /* StreamChatUI */; };
 		60C2C4D429519DEB008A3B11 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 60C2C4D329519DEB008A3B11 /* SnapKit */; };
+		60F163F9295438FC003DC230 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F163F8295438FC003DC230 /* ChatManager.swift */; };
+		60F163FB29544AE4003DC230 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F163FA29544AE4003DC230 /* SettingsViewController.swift */; };
+		60F163FD29544AF1003DC230 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F163FC29544AF1003DC230 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6077F54B295197A8008415A5 /* iOSChitChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSChitChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6077F54E295197A8008415A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6077F550295197A8008415A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6077F552295197A8008415A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6077F552295197A8008415A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6077F557295197AA008415A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6077F55A295197AA008415A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6077F55C295197AA008415A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F163F8295438FC003DC230 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		60F163FA29544AE4003DC230 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		60F163FC29544AF1003DC230 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,49 @@
 		6077F54D295197A8008415A5 /* iOSChitChat */ = {
 			isa = PBXGroup;
 			children = (
-				6077F54E295197A8008415A5 /* AppDelegate.swift */,
-				6077F550295197A8008415A5 /* SceneDelegate.swift */,
-				6077F552295197A8008415A5 /* ViewController.swift */,
-				6077F557295197AA008415A5 /* Assets.xcassets */,
-				6077F559295197AA008415A5 /* LaunchScreen.storyboard */,
+				60F163F7295438BA003DC230 /* Others */,
+				60F163F6295438AE003DC230 /* Managers */,
+				60F163F5295438A7003DC230 /* Views */,
+				60F163F42954389E003DC230 /* Controller */,
 				6077F55C295197AA008415A5 /* Info.plist */,
 			);
 			path = iOSChitChat;
+			sourceTree = "<group>";
+		};
+		60F163F42954389E003DC230 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6077F552295197A8008415A5 /* LoginViewController.swift */,
+				60F163FA29544AE4003DC230 /* SettingsViewController.swift */,
+				60F163FC29544AF1003DC230 /* TabBarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60F163F5295438A7003DC230 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60F163F6295438AE003DC230 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				60F163F8295438FC003DC230 /* ChatManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		60F163F7295438BA003DC230 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6077F54E295197A8008415A5 /* AppDelegate.swift */,
+				6077F550295197A8008415A5 /* SceneDelegate.swift */,
+				6077F559295197AA008415A5 /* LaunchScreen.storyboard */,
+				6077F557295197AA008415A5 /* Assets.xcassets */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6077F553295197A8008415A5 /* ViewController.swift in Sources */,
+				6077F553295197A8008415A5 /* LoginViewController.swift in Sources */,
 				6077F54F295197A8008415A5 /* AppDelegate.swift in Sources */,
 				6077F551295197A8008415A5 /* SceneDelegate.swift in Sources */,
+				60F163FB29544AE4003DC230 /* SettingsViewController.swift in Sources */,
+				60F163FD29544AF1003DC230 /* TabBarViewController.swift in Sources */,
+				60F163F9295438FC003DC230 /* ChatManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
