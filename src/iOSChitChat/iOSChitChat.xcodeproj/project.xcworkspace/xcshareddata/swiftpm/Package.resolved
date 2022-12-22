@@ -1,0 +1,50 @@
+{
+  "pins" : [
+    {
+      "identity" : "difference",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzysztofzablocki/Difference.git",
+      "state" : {
+        "revision" : "02fe1111edc8318c4f8a0da96336fcbcc201f38b",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "58320fe80522414bf3a7e24c88123581dc586752"
+      }
+    },
+    {
+      "identity" : "stream-chat-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-chat-swift",
+      "state" : {
+        "revision" : "9158427433a3b29e3d5ead58ee258e241498821b",
+        "version" : "4.25.0"
+      }
+    },
+    {
+      "identity" : "stream-chat-swift-test-helpers",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-chat-swift-test-helpers.git",
+      "state" : {
+        "revision" : "237da98e4946ed8e2dac51d9e82e713b0d47a298",
+        "version" : "0.2.5"
+      }
+    },
+    {
+      "identity" : "swifter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/httpswift/swifter",
+      "state" : {
+        "revision" : "9483a5d459b45c3ffd059f7b55f9638e268632fd",
+        "version" : "1.5.0"
+      }
+    }
+  ],
+  "version" : 2
+}
