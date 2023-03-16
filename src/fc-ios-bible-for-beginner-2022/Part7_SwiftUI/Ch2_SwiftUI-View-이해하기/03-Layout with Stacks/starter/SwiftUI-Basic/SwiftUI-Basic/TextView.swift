@@ -9,8 +9,13 @@ import SwiftUI
 
 struct TextView: View {
     var body: some View {
-        Text("SwiftUI")
-            .font(.system(size: 40, weight: .bold, design: .default))
+        HStack{
+            Spacer()
+            Text("SwiftUI")
+                .font(.system(size: 40, weight: .bold, design: .default))
+            Spacer()
+            Spacer()
+        }
     }
 }
 

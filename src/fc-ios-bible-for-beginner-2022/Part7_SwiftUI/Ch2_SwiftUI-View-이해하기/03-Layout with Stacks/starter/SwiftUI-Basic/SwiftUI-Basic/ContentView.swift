@@ -9,9 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        ImageView()
-//        ButtonView()
-        TextView()
+        VStack(alignment: .trailing, spacing: 30){
+            ImageView()
+            ButtonView()
+            TextView()
+            
+            Spacer()
+            
+            HStack{
+                ImageView()
+                ButtonView()
+                TextView()
+            }
+            
+            Spacer()
+            
+            ZStack{
+                ImageView()
+                ButtonView()
+                TextView()
+            }
+        }
+        
     }
 }
 
