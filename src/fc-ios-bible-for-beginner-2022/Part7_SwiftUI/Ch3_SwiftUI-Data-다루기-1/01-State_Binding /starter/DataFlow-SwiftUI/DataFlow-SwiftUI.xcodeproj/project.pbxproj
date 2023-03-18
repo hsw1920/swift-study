@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		940520BB283932C5004C24C2 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940520BA283932C5004C24C2 /* PlayButton.swift */; };
-		940520BD283932E0004C24C2 /* PlayingStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940520BC283932E0004C24C2 /* PlayingStatusView.swift */; };
+		60AEE42229C59C3A00C702E9 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AEE42129C59C3A00C702E9 /* PlayButton.swift */; };
+		60AEE42429C59C4500C702E9 /* PlayingStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AEE42329C59C4500C702E9 /* PlayingStatusView.swift */; };
 		945751A628391D1C00EE28E6 /* DataFlow_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945751A528391D1C00EE28E6 /* DataFlow_SwiftUIApp.swift */; };
 		945751A828391D1C00EE28E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945751A728391D1C00EE28E6 /* ContentView.swift */; };
 		945751AA28391D1D00EE28E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945751A928391D1D00EE28E6 /* Assets.xcassets */; };
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		940520BA283932C5004C24C2 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
-		940520BC283932E0004C24C2 /* PlayingStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingStatusView.swift; sourceTree = "<group>"; };
+		60AEE42129C59C3A00C702E9 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		60AEE42329C59C4500C702E9 /* PlayingStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingStatusView.swift; sourceTree = "<group>"; };
 		945751A228391D1C00EE28E6 /* DataFlow-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DataFlow-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		945751A528391D1C00EE28E6 /* DataFlow_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFlow_SwiftUIApp.swift; sourceTree = "<group>"; };
 		945751A728391D1C00EE28E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 				945751A728391D1C00EE28E6 /* ContentView.swift */,
 				945751CF28391D4200EE28E6 /* Episode.swift */,
 				945751D128391E0A00EE28E6 /* PlayerView.swift */,
-				940520BC283932E0004C24C2 /* PlayingStatusView.swift */,
-				940520BA283932C5004C24C2 /* PlayButton.swift */,
+				60AEE42129C59C3A00C702E9 /* PlayButton.swift */,
+				60AEE42329C59C4500C702E9 /* PlayingStatusView.swift */,
 				945751A928391D1D00EE28E6 /* Assets.xcassets */,
 				945751AB28391D1D00EE28E6 /* Preview Content */,
 			);
@@ -270,9 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				945751A828391D1C00EE28E6 /* ContentView.swift in Sources */,
-				940520BB283932C5004C24C2 /* PlayButton.swift in Sources */,
+				60AEE42229C59C3A00C702E9 /* PlayButton.swift in Sources */,
 				945751D028391D4200EE28E6 /* Episode.swift in Sources */,
-				940520BD283932E0004C24C2 /* PlayingStatusView.swift in Sources */,
+				60AEE42429C59C4500C702E9 /* PlayingStatusView.swift in Sources */,
 				945751A628391D1C00EE28E6 /* DataFlow_SwiftUIApp.swift in Sources */,
 				945751D228391E0A00EE28E6 /* PlayerView.swift in Sources */,
 			);
