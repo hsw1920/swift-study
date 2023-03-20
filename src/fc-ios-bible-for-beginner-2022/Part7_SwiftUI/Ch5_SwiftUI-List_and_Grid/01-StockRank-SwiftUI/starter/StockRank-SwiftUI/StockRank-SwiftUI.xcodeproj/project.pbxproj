@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60220DA129C8961D0027103D /* StockRankRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60220DA029C8961D0027103D /* StockRankRow.swift */; };
 		9486F0A828386AC10069AEB0 /* StockRank_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0A728386AC10069AEB0 /* StockRank_SwiftUIApp.swift */; };
 		9486F0AA28386AC10069AEB0 /* StockRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0A928386AC10069AEB0 /* StockRankView.swift */; };
 		9486F0AC28386AC20069AEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9486F0AB28386AC20069AEB0 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60220DA029C8961D0027103D /* StockRankRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankRow.swift; sourceTree = "<group>"; };
 		9486F0A428386AC10069AEB0 /* StockRank-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StockRank-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9486F0A728386AC10069AEB0 /* StockRank_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRank_SwiftUIApp.swift; sourceTree = "<group>"; };
 		9486F0A928386AC10069AEB0 /* StockRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				9486F0A728386AC10069AEB0 /* StockRank_SwiftUIApp.swift */,
 				9486F0D128386AE60069AEB0 /* StockModel.swift */,
 				9486F0A928386AC10069AEB0 /* StockRankView.swift */,
+				60220DA029C8961D0027103D /* StockRankRow.swift */,
 				9486F0AB28386AC20069AEB0 /* Assets.xcassets */,
 				9486F0AD28386AC20069AEB0 /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9486F0AA28386AC10069AEB0 /* StockRankView.swift in Sources */,
+				60220DA129C8961D0027103D /* StockRankRow.swift in Sources */,
 				9486F0A828386AC10069AEB0 /* StockRank_SwiftUIApp.swift in Sources */,
 				9486F0D228386AE60069AEB0 /* StockModel.swift in Sources */,
 			);
