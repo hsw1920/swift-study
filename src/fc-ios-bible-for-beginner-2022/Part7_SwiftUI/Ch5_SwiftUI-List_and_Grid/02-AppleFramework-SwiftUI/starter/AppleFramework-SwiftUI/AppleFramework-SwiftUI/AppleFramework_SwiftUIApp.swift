@@ -11,7 +11,7 @@ import SwiftUI
 struct AppleFramework_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FrameworkListView()
         }
     }
 }
