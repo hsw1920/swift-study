@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StockRankRow: View {
     
-    var stock: StockModel
+    @Binding var stock: StockModel
     
     var body: some View {
         HStack {
@@ -53,6 +53,8 @@ struct StockRankRow: View {
 
 struct StockRankRow_Previews: PreviewProvider {
     static var previews: some View {
-        StockRankRow(stock: StockModel.list[2])
+        StockRankRow(stock:
+                .constant(StockModel.list[2]))
+                .previewLayout(.fixed(width: 390, height: 80))    
     }
 }

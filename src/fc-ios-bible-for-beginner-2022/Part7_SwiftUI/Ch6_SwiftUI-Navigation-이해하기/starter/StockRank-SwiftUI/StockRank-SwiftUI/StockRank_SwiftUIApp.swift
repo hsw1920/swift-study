@@ -12,6 +12,7 @@ struct StockRank_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             StockRankView()
+                .preferredColorScheme(.dark)
         }
     }
 }
