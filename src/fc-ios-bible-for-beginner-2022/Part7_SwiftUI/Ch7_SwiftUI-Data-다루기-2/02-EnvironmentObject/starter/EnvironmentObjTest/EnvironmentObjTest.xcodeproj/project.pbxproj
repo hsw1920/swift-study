@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60346D3B29CF3E89006186A7 /* UserProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60346D3A29CF3E89006186A7 /* UserProfileSettings.swift */; };
+		60346D3D29CF3ECB006186A7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60346D3C29CF3ECB006186A7 /* SecondView.swift */; };
+		60346D3F29CF3ED2006186A7 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60346D3E29CF3ED2006186A7 /* ThirdView.swift */; };
 		94824A25285623A00019581F /* EnvironmentObjTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94824A24285623A00019581F /* EnvironmentObjTestApp.swift */; };
-		94824A27285623A00019581F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94824A26285623A00019581F /* ContentView.swift */; };
+		94824A27285623A00019581F /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94824A26285623A00019581F /* FirstView.swift */; };
 		94824A29285623A10019581F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94824A28285623A10019581F /* Assets.xcassets */; };
 		94824A2C285623A10019581F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94824A2B285623A10019581F /* Preview Assets.xcassets */; };
 		94824A36285623A20019581F /* EnvironmentObjTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94824A35285623A20019581F /* EnvironmentObjTestTests.swift */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60346D3A29CF3E89006186A7 /* UserProfileSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSettings.swift; sourceTree = "<group>"; };
+		60346D3C29CF3ECB006186A7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		60346D3E29CF3ED2006186A7 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		94824A21285623A00019581F /* EnvironmentObjTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentObjTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94824A24285623A00019581F /* EnvironmentObjTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjTestApp.swift; sourceTree = "<group>"; };
-		94824A26285623A00019581F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94824A26285623A00019581F /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		94824A28285623A10019581F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94824A2B285623A10019581F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94824A31285623A20019581F /* EnvironmentObjTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentObjTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				94824A24285623A00019581F /* EnvironmentObjTestApp.swift */,
-				94824A26285623A00019581F /* ContentView.swift */,
+				60346D3A29CF3E89006186A7 /* UserProfileSettings.swift */,
+				94824A26285623A00019581F /* FirstView.swift */,
+				60346D3C29CF3ECB006186A7 /* SecondView.swift */,
+				60346D3E29CF3ED2006186A7 /* ThirdView.swift */,
 				94824A28285623A10019581F /* Assets.xcassets */,
 				94824A2A285623A10019581F /* Preview Content */,
 			);
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94824A27285623A00019581F /* ContentView.swift in Sources */,
+				94824A27285623A00019581F /* FirstView.swift in Sources */,
+				60346D3F29CF3ED2006186A7 /* ThirdView.swift in Sources */,
+				60346D3B29CF3E89006186A7 /* UserProfileSettings.swift in Sources */,
+				60346D3D29CF3ECB006186A7 /* SecondView.swift in Sources */,
 				94824A25285623A00019581F /* EnvironmentObjTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
