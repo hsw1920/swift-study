@@ -12,6 +12,7 @@ struct AppleFramework_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             FrameworkListView()
+                .preferredColorScheme(.dark)
         }
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60F15FB929D0114600EBC4C4 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F15FB829D0114600EBC4C4 /* FrameworkDetailView.swift */; };
+		60F15FBB29D0123500EBC4C4 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F15FBA29D0123500EBC4C4 /* FrameworkListViewModel.swift */; };
+		60F15FBD29D0181B00EBC4C4 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F15FBC29D0181B00EBC4C4 /* FrameworkDetailViewModel.swift */; };
 		943FC92E2847177700CF742D /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FC92D2847177700CF742D /* FrameworkCell.swift */; };
 		94768D4B2858DEB300F507E4 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94768D4A2858DEB300F507E4 /* SafariView.swift */; };
 		9486F0E2283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0E1283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60F15FB829D0114600EBC4C4 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		60F15FBA29D0123500EBC4C4 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		60F15FBC29D0181B00EBC4C4 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		943FC92D2847177700CF742D /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 		94768D4A2858DEB300F507E4 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		9486F0DE283883B30069AEB0 /* AppleFramework-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleFramework-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +108,9 @@
 			children = (
 				9486F0E1283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift */,
 				9486F0E3283883B30069AEB0 /* FrameworkListView.swift */,
+				60F15FBA29D0123500EBC4C4 /* FrameworkListViewModel.swift */,
+				60F15FB829D0114600EBC4C4 /* FrameworkDetailView.swift */,
+				60F15FBC29D0181B00EBC4C4 /* FrameworkDetailViewModel.swift */,
 				943FC92D2847177700CF742D /* FrameworkCell.swift */,
 				9486F10B283883D60069AEB0 /* FramewokData.swift */,
 				94768D4A2858DEB300F507E4 /* SafariView.swift */,
@@ -268,8 +277,11 @@
 			files = (
 				943FC92E2847177700CF742D /* FrameworkCell.swift in Sources */,
 				9486F0E4283883B30069AEB0 /* FrameworkListView.swift in Sources */,
+				60F15FBB29D0123500EBC4C4 /* FrameworkListViewModel.swift in Sources */,
+				60F15FB929D0114600EBC4C4 /* FrameworkDetailView.swift in Sources */,
 				9486F10C283883D60069AEB0 /* FramewokData.swift in Sources */,
 				9486F0E2283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift in Sources */,
+				60F15FBD29D0181B00EBC4C4 /* FrameworkDetailViewModel.swift in Sources */,
 				94768D4B2858DEB300F507E4 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
