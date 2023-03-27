@@ -16,8 +16,7 @@ class FrameworkDetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var subscriptions = Set<AnyCancellable>()
-    let buttonTapped = PassthroughSubject<AppleFramework, Never>()
-    let framework = CurrentValueSubject<AppleFramework, Never>(AppleFramework(name: "Unknown", imageName: "", urlString: "", description: ""))
+    var viewModel: FrameworkDetailViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,7 @@ class FrameworkDetailViewController: UIViewController {
     
     private func bind() {
         // input : Button 클릭
-        buttonTapped
+        viewModel.buttonTapped
             .receive(on: RunLoop.main)
             .compactMap { URL(string: $0.urlString) }
             .sink { [unowned self] url in
@@ -35,7 +34,7 @@ class FrameworkDetailViewController: UIViewController {
             }.store(in: &subscriptions)
         
         // output : Data 세팅 될때 UI 업데이트
-        framework
+        viewModel.framework
             .receive(on: RunLoop.main)
             .sink { [unowned self] framework in
                 self.imageView.image = UIImage(named: framework.imageName)
@@ -45,6 +44,6 @@ class FrameworkDetailViewController: UIViewController {
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
-        buttonTapped.send(framework.value)
+        viewModel.learnMoreTapped()
     }
 }
