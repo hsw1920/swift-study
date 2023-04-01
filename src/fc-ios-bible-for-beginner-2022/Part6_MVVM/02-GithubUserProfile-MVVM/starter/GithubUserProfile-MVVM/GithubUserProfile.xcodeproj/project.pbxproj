@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		609BF45C29D8713500F9886F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609BF45B29D8713500F9886F /* SearchViewModel.swift */; };
 		941BDB172842567A00DF0BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BDB162842567A00DF0BFC /* AppDelegate.swift */; };
 		941BDB192842567A00DF0BFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BDB182842567A00DF0BFC /* SceneDelegate.swift */; };
 		941BDB1E2842567A00DF0BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941BDB1C2842567A00DF0BFC /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		609BF45B29D8713500F9886F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		941BDB132842567A00DF0BFC /* GithubUserProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUserProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941BDB162842567A00DF0BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		941BDB182842567A00DF0BFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				941BDB162842567A00DF0BFC /* AppDelegate.swift */,
 				941BDB182842567A00DF0BFC /* SceneDelegate.swift */,
+				609BF45B29D8713500F9886F /* SearchViewModel.swift */,
 				941BDB4B284256B900DF0BFC /* Utils */,
 				941BDB46284256AD00DF0BFC /* Network */,
 				941BDB1C2842567A00DF0BFC /* Main.storyboard */,
@@ -304,6 +307,7 @@
 			files = (
 				941BDB4F2842570D00DF0BFC /* SearchViewController.swift in Sources */,
 				941BDB512842574700DF0BFC /* UserProfile.swift in Sources */,
+				609BF45C29D8713500F9886F /* SearchViewModel.swift in Sources */,
 				941BDB172842567A00DF0BFC /* AppDelegate.swift in Sources */,
 				941BDB49284256AD00DF0BFC /* NetworkService.swift in Sources */,
 				941BDB4A284256AD00DF0BFC /* Resource.swift in Sources */,

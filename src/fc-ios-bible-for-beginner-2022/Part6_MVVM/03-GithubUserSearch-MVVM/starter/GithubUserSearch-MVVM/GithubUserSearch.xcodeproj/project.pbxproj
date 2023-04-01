@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		609BF45A29D8701600F9886F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609BF45929D8701600F9886F /* SearchViewModel.swift */; };
 		941BDB03284248C700DF0BFC /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BDB02284248C700DF0BFC /* Resource.swift */; };
 		941BDB052842495600DF0BFC /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BDB042842495600DF0BFC /* Publisher+Utils.swift */; };
 		947A4E5A283D2A98002F445A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A4E59283D2A98002F445A /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		609BF45929D8701600F9886F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		941BDB02284248C700DF0BFC /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		941BDB042842495600DF0BFC /* Publisher+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
 		947A4E56283D2A98002F445A /* GithubUserSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUserSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 			children = (
 				947A4E59283D2A98002F445A /* AppDelegate.swift */,
 				947A4E5B283D2A98002F445A /* SceneDelegate.swift */,
+				609BF45929D8701600F9886F /* SearchViewModel.swift */,
 				941BDB0828424F8B00DF0BFC /* Utils */,
 				941BDB0628424F4A00DF0BFC /* Network */,
 				941BDB0728424F6000DF0BFC /* Model */,
@@ -314,6 +317,7 @@
 				947A4E8A283D2ABD002F445A /* SearchViewController.swift in Sources */,
 				941BDB052842495600DF0BFC /* Publisher+Utils.swift in Sources */,
 				947A4E8C283D2B39002F445A /* ResultCell.swift in Sources */,
+				609BF45A29D8701600F9886F /* SearchViewModel.swift in Sources */,
 				947A4E5C283D2A98002F445A /* SceneDelegate.swift in Sources */,
 				947A4E90283D416E002F445A /* SearchResult.swift in Sources */,
 				947A4E92283D418B002F445A /* SearchUserResponse.swift in Sources */,
