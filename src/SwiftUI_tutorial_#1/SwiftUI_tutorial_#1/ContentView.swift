@@ -13,9 +13,9 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 HStack{
-                    MyVstackView()
-                    MyVstackView()
-                    MyVstackView()
+                    MyVstackView(isActivated: $isActivated)
+                    MyVstackView(isActivated: $isActivated)
+                    MyVstackView(isActivated: $isActivated)
                 }
                 .padding(isActivated ? 50.0 : 10.0)
                 .background(isActivated ? .yellow : .black)
@@ -29,7 +29,7 @@ struct ContentView: View {
                 .padding()
                 
                 // 네비게이션 버튼(링크)
-                NavigationLink(destination: MyTextView()) {
+                NavigationLink(destination: MyTextView(isActivated: $isActivated)) {
                     Text("네비게이션")
                         .font(.system(size: 40))
                         .fontWeight(.bold)
@@ -50,16 +50,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct MyVstackView: View {
-    var body: some View {
-        VStack {
-            Text("1!")
-                .font(.system(size: 60))
-            Text("2!")
-                .font(.system(size: 60))
-            Text("3!")
-                .font(.system(size: 60))
-        }
-        .background(.orange)
-    }
-}
