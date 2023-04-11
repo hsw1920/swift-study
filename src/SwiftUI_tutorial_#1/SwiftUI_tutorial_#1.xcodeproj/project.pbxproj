@@ -11,6 +11,7 @@
 		6069C6FF29E596DB001A276C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069C6FE29E596DB001A276C /* ContentView.swift */; };
 		6069C70129E596DC001A276C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6069C70029E596DC001A276C /* Assets.xcassets */; };
 		6069C70429E596DC001A276C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6069C70329E596DC001A276C /* Preview Assets.xcassets */; };
+		6069C70B29E59BAC001A276C /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069C70A29E59BAC001A276C /* MyTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6069C6FE29E596DB001A276C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6069C70029E596DC001A276C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6069C70329E596DC001A276C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6069C70A29E59BAC001A276C /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				6069C6FC29E596DB001A276C /* SwiftUI_tutorial__1App.swift */,
 				6069C6FE29E596DB001A276C /* ContentView.swift */,
+				6069C70A29E59BAC001A276C /* MyTextView.swift */,
 				6069C70029E596DC001A276C /* Assets.xcassets */,
 				6069C70229E596DC001A276C /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6069C6FF29E596DB001A276C /* ContentView.swift in Sources */,
+				6069C70B29E59BAC001A276C /* MyTextView.swift in Sources */,
 				6069C6FD29E596DB001A276C /* SwiftUI_tutorial__1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
