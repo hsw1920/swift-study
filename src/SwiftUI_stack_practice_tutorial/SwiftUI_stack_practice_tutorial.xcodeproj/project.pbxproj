@@ -14,6 +14,7 @@
 		6096050A29EA838D00EBC4D4 /* MyProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096050929EA838D00EBC4D4 /* MyProjectCard.swift */; };
 		6096050C29EA869200EBC4D4 /* MyBasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096050B29EA869200EBC4D4 /* MyBasicCard.swift */; };
 		6096050E29EA92A700EBC4D4 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096050D29EA92A700EBC4D4 /* MyCard.swift */; };
+		6096051029EABF3700EBC4D4 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096050F29EABF3700EBC4D4 /* MyList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		6096050929EA838D00EBC4D4 /* MyProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectCard.swift; sourceTree = "<group>"; };
 		6096050B29EA869200EBC4D4 /* MyBasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicCard.swift; sourceTree = "<group>"; };
 		6096050D29EA92A700EBC4D4 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
+		6096050F29EABF3700EBC4D4 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				609604FB29EA837400EBC4D4 /* SwiftUI_stack_practice_tutorialApp.swift */,
 				6096050929EA838D00EBC4D4 /* MyProjectCard.swift */,
+				6096050F29EABF3700EBC4D4 /* MyList.swift */,
 				6096050D29EA92A700EBC4D4 /* MyCard.swift */,
 				609604FD29EA837400EBC4D4 /* ContentView.swift */,
 				6096050B29EA869200EBC4D4 /* MyBasicCard.swift */,
@@ -151,6 +154,7 @@
 				6096050C29EA869200EBC4D4 /* MyBasicCard.swift in Sources */,
 				6096050E29EA92A700EBC4D4 /* MyCard.swift in Sources */,
 				609604FC29EA837400EBC4D4 /* SwiftUI_stack_practice_tutorialApp.swift in Sources */,
+				6096051029EABF3700EBC4D4 /* MyList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
