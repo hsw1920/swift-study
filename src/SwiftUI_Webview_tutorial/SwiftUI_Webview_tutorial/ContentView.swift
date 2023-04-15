@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView {
             HStack {
                 NavigationLink(destination:
-                    MyWebView(urlToLoad: "https://www.naver.com")
+                    MyWebview(urlToLoad: "https://www.naver.com")
                     .edgesIgnoringSafeArea(.all)
                 ){
                     Text("네이버")
@@ -24,7 +24,7 @@ struct ContentView: View {
                         .font(.system(size: 20))
                 }
                 NavigationLink(destination:
-                    MyWebView(urlToLoad: "https://www.daum.net")
+                    MyWebview(urlToLoad: "https://www.daum.net")
                     .edgesIgnoringSafeArea(.all)
                 ){
                     Text("다음")
@@ -36,7 +36,7 @@ struct ContentView: View {
                         .font(.system(size: 20))
                 }
                 NavigationLink(destination:
-                    MyWebView(urlToLoad: "https://www.google.com")
+                    MyWebview(urlToLoad: "https://www.google.com")
                     .edgesIgnoringSafeArea(.all)
                 ){
                     Text("구글")
