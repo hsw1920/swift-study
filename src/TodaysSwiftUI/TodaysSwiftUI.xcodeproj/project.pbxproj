@@ -15,6 +15,7 @@
 		6096052F29EAE9DF00EBC4D4 /* MyNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096052E29EAE9DF00EBC4D4 /* MyNavigationStack.swift */; };
 		6096053229EAEB8D00EBC4D4 /* MyAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096053129EAEB8D00EBC4D4 /* MyAppear.swift */; };
 		6096053429EAEFF500EBC4D4 /* MyWrapUp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096053329EAEFF500EBC4D4 /* MyWrapUp2.swift */; };
+		6096053629EAF43100EBC4D4 /* MyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096053529EAF43100EBC4D4 /* MyShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		6096052E29EAE9DF00EBC4D4 /* MyNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationStack.swift; sourceTree = "<group>"; };
 		6096053129EAEB8D00EBC4D4 /* MyAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppear.swift; sourceTree = "<group>"; };
 		6096053329EAEFF500EBC4D4 /* MyWrapUp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWrapUp2.swift; sourceTree = "<group>"; };
+		6096053529EAF43100EBC4D4 /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				6096053129EAEB8D00EBC4D4 /* MyAppear.swift */,
+				6096053529EAF43100EBC4D4 /* MyShape.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				6096053229EAEB8D00EBC4D4 /* MyAppear.swift in Sources */,
 				6096052029EAE72C00EBC4D4 /* ContentView.swift in Sources */,
 				6096051E29EAE72C00EBC4D4 /* TodaysSwiftUIApp.swift in Sources */,
+				6096053629EAF43100EBC4D4 /* MyShape.swift in Sources */,
 				6096052F29EAE9DF00EBC4D4 /* MyNavigationStack.swift in Sources */,
 				6096052D29EAE74400EBC4D4 /* MyNavigationView.swift in Sources */,
 				6096053429EAEFF500EBC4D4 /* MyWrapUp2.swift in Sources */,
