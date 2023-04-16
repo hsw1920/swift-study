@@ -13,7 +13,7 @@ struct MySlider: View {
     var body: some View {
         VStack{
             Text(myPoint.description)
-            Slider(value: $myPoint) {
+            Slider(value: $myPoint, in: 0...100, step: 1) {
                 Text("My Slider")
             } minimumValueLabel: {
                 Text("0")
