@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MySlider: View {
-    @State var myPoint: Float = 0.5
+    @State var myPoint: Float = 50
     
     var body: some View {
         VStack{
