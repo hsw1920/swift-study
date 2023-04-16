@@ -18,6 +18,7 @@
 		6096053629EAF43100EBC4D4 /* MyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096053529EAF43100EBC4D4 /* MyShape.swift */; };
 		6096053829EAF67D00EBC4D4 /* MyBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096053729EAF67D00EBC4D4 /* MyBinding.swift */; };
 		6096055029EBE78800EBC4D4 /* MySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096054F29EBE78800EBC4D4 /* MySlider.swift */; };
+		6096056829EC26CA00EBC4D4 /* MyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096056729EC26CA00EBC4D4 /* MyStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		6096053529EAF43100EBC4D4 /* MyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShape.swift; sourceTree = "<group>"; };
 		6096053729EAF67D00EBC4D4 /* MyBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBinding.swift; sourceTree = "<group>"; };
 		6096054F29EBE78800EBC4D4 /* MySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlider.swift; sourceTree = "<group>"; };
+		6096056729EC26CA00EBC4D4 /* MyStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				6096053529EAF43100EBC4D4 /* MyShape.swift */,
 				6096053729EAF67D00EBC4D4 /* MyBinding.swift */,
 				6096054F29EBE78800EBC4D4 /* MySlider.swift */,
+				6096056729EC26CA00EBC4D4 /* MyStepper.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				6096053229EAEB8D00EBC4D4 /* MyAppear.swift in Sources */,
 				6096052029EAE72C00EBC4D4 /* ContentView.swift in Sources */,
 				6096051E29EAE72C00EBC4D4 /* TodaysSwiftUIApp.swift in Sources */,
+				6096056829EC26CA00EBC4D4 /* MyStepper.swift in Sources */,
 				6096053829EAF67D00EBC4D4 /* MyBinding.swift in Sources */,
 				6096053629EAF43100EBC4D4 /* MyShape.swift in Sources */,
 				6096052F29EAE9DF00EBC4D4 /* MyNavigationStack.swift in Sources */,
