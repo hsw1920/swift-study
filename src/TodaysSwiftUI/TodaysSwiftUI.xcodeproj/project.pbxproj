@@ -20,6 +20,7 @@
 		6096055029EBE78800EBC4D4 /* MySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096054F29EBE78800EBC4D4 /* MySlider.swift */; };
 		6096056829EC26CA00EBC4D4 /* MyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096056729EC26CA00EBC4D4 /* MyStepper.swift */; };
 		609605A129ED93E900EBC4D4 /* MyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A029ED93E900EBC4D4 /* MyPicker.swift */; };
+		609605A329ED959C00EBC4D4 /* MyTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A229ED959C00EBC4D4 /* MyTextEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		6096054F29EBE78800EBC4D4 /* MySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlider.swift; sourceTree = "<group>"; };
 		6096056729EC26CA00EBC4D4 /* MyStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStepper.swift; sourceTree = "<group>"; };
 		609605A029ED93E900EBC4D4 /* MyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPicker.swift; sourceTree = "<group>"; };
+		609605A229ED959C00EBC4D4 /* MyTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				6096053729EAF67D00EBC4D4 /* MyBinding.swift */,
 				6096054F29EBE78800EBC4D4 /* MySlider.swift */,
 				609605A029ED93E900EBC4D4 /* MyPicker.swift */,
+				609605A229ED959C00EBC4D4 /* MyTextEditor.swift */,
 				6096056729EC26CA00EBC4D4 /* MyStepper.swift */,
 			);
 			path = Views;
@@ -187,6 +190,7 @@
 				6096053829EAF67D00EBC4D4 /* MyBinding.swift in Sources */,
 				6096053629EAF43100EBC4D4 /* MyShape.swift in Sources */,
 				6096052F29EAE9DF00EBC4D4 /* MyNavigationStack.swift in Sources */,
+				609605A329ED959C00EBC4D4 /* MyTextEditor.swift in Sources */,
 				6096055029EBE78800EBC4D4 /* MySlider.swift in Sources */,
 				609605A129ED93E900EBC4D4 /* MyPicker.swift in Sources */,
 				6096052D29EAE74400EBC4D4 /* MyNavigationView.swift in Sources */,

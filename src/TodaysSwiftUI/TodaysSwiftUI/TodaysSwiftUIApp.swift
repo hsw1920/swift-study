@@ -12,7 +12,8 @@ struct TodaysSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            MyAppear()
+//            MyAppear()
+            MyTextEditor()
         }
     }
 }
