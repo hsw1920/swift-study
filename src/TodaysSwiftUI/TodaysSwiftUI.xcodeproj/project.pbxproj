@@ -22,6 +22,7 @@
 		609605A129ED93E900EBC4D4 /* MyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A029ED93E900EBC4D4 /* MyPicker.swift */; };
 		609605A329ED959C00EBC4D4 /* MyTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A229ED959C00EBC4D4 /* MyTextEditor.swift */; };
 		609605A529ED96E400EBC4D4 /* MyHexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A429ED96E400EBC4D4 /* MyHexColor.swift */; };
+		609605A829EE4B0500EBC4D4 /* MyBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A729EE4B0500EBC4D4 /* MyBasicAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		609605A029ED93E900EBC4D4 /* MyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPicker.swift; sourceTree = "<group>"; };
 		609605A229ED959C00EBC4D4 /* MyTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextEditor.swift; sourceTree = "<group>"; };
 		609605A429ED96E400EBC4D4 /* MyHexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHexColor.swift; sourceTree = "<group>"; };
+		609605A729EE4B0500EBC4D4 /* MyBasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				6096052B29EAE73700EBC4D4 /* Page */,
+				609605A629EE4AF300EBC4D4 /* Animation */,
 				6096053029EAEB7C00EBC4D4 /* Views */,
 				6096051D29EAE72C00EBC4D4 /* TodaysSwiftUIApp.swift */,
 				6096051F29EAE72C00EBC4D4 /* ContentView.swift */,
@@ -114,6 +117,14 @@
 				609605A429ED96E400EBC4D4 /* MyHexColor.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		609605A629EE4AF300EBC4D4 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				609605A729EE4B0500EBC4D4 /* MyBasicAnimation.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				6096053629EAF43100EBC4D4 /* MyShape.swift in Sources */,
 				6096052F29EAE9DF00EBC4D4 /* MyNavigationStack.swift in Sources */,
 				609605A329ED959C00EBC4D4 /* MyTextEditor.swift in Sources */,
+				609605A829EE4B0500EBC4D4 /* MyBasicAnimation.swift in Sources */,
 				6096055029EBE78800EBC4D4 /* MySlider.swift in Sources */,
 				609605A129ED93E900EBC4D4 /* MyPicker.swift in Sources */,
 				6096052D29EAE74400EBC4D4 /* MyNavigationView.swift in Sources */,
