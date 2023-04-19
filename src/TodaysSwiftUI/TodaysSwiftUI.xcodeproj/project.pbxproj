@@ -25,6 +25,7 @@
 		609605A829EE4B0500EBC4D4 /* MyBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A729EE4B0500EBC4D4 /* MyBasicAnimation.swift */; };
 		609605AA29EE4DDE00EBC4D4 /* MyGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605A929EE4DDE00EBC4D4 /* MyGradient.swift */; };
 		609605C329F0253800EBC4D4 /* MyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605C229F0253800EBC4D4 /* MyForm.swift */; };
+		609605C629F028C000EBC4D4 /* MyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609605C529F028C000EBC4D4 /* MyGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		609605A729EE4B0500EBC4D4 /* MyBasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicAnimation.swift; sourceTree = "<group>"; };
 		609605A929EE4DDE00EBC4D4 /* MyGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGradient.swift; sourceTree = "<group>"; };
 		609605C229F0253800EBC4D4 /* MyForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyForm.swift; sourceTree = "<group>"; };
+		609605C529F028C000EBC4D4 /* MyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 		6096051C29EAE72C00EBC4D4 /* TodaysSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				6096052B29EAE73700EBC4D4 /* Page */,
+				609605C429F028A900EBC4D4 /* Layout */,
 				609605A629EE4AF300EBC4D4 /* Animation */,
+				6096052B29EAE73700EBC4D4 /* Page */,
 				6096053029EAEB7C00EBC4D4 /* Views */,
 				609605C129F0250C00EBC4D4 /* Lists */,
 				6096051D29EAE72C00EBC4D4 /* TodaysSwiftUIApp.swift */,
@@ -139,6 +142,14 @@
 				609605C229F0253800EBC4D4 /* MyForm.swift */,
 			);
 			path = Lists;
+			sourceTree = "<group>";
+		};
+		609605C429F028A900EBC4D4 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				609605C529F028C000EBC4D4 /* MyGrid.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				6096052029EAE72C00EBC4D4 /* ContentView.swift in Sources */,
 				609605C329F0253800EBC4D4 /* MyForm.swift in Sources */,
 				6096051E29EAE72C00EBC4D4 /* TodaysSwiftUIApp.swift in Sources */,
+				609605C629F028C000EBC4D4 /* MyGrid.swift in Sources */,
 				609605AA29EE4DDE00EBC4D4 /* MyGradient.swift in Sources */,
 				6096056829EC26CA00EBC4D4 /* MyStepper.swift in Sources */,
 				6096053829EAF67D00EBC4D4 /* MyBinding.swift in Sources */,
